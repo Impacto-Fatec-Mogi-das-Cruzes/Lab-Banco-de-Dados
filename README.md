@@ -2,9 +2,6 @@
 Arquivos para as entregas das atividades da matéria Laboratório de Banco de Dados.
 
 ## Requisitos das Entregas:
-
----
-
 > ### Entrega 1
 > - Normalização do DataSet
 > - Confecção do dicionário de dados
