@@ -11,30 +11,30 @@ Arquivos para as entregas das atividades da matéria Laboratório de Banco de Da
 > - Criação de Sequences e triggers
 > - Povoamento da base de dados
 > - Consultas estratégicas
-> ***Data: 17/04/2026***
+> - ***Data: 17/04/2026***
 > ### Entrega 2
 > - Tabelas de histórico
 > - Triggers de historiamento
 > - Historiamento da carga 1 e cargas 2 e 3
 > - Consultas estratégicas
-> ***Data: 17/04/2026***
+> - ***Data: 17/04/2026***
 > ### Entrega 3
 > - Criação do usuário para auditoria
 > - Criação da tabela de auditoria
 > - Criação de Sequence e trigger para auditoria
 > - Criação da procedure de auditoria
 > - Criação dos triggers para auditoria
-> ***Data: 12/06/2026***
+> - ***Data: 12/06/2026***
 > ### Entrega 4
 > - Criação do usuário para dw
 > - Criação de views dinâmicas
 > - Criação de Views materializadas
 > - Consultas estratégicas
-> ***Data: 12/06/2026***
+> - ***Data: 12/06/2026***
 > ### Entrega 5
 > - Certificado do curso de Power BI
 > - Dashboard de análise no Power BI
-> ***Data 15/05/2026***
+> - ***Data 15/05/2026***
 ---
 
 ## Inicializando o Banco
