@@ -37,7 +37,7 @@ Arquivos para as entregas das atividades da matéria Laboratório de Banco de Da
 ## Inicializando o Banco
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/LucianoAk/Lab-Banco-Dados.git
+git clone https://github.com/Impacto-Fatec-Mogi-das-Cruzes/Lab-Banco-de-Dados.git
 ```
 
 ### 2. Navegue até o repositório
