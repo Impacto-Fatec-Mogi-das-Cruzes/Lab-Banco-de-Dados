@@ -50,10 +50,6 @@ div.currentmasterreport table td, div.currentchildreport table td {
     border-collapse: collapse;
 }
 
-div.currentmasterreport table td.currentcell, div.currentchildreport table td.currentcell {
-    background-color: rgb(214,214,214);
-}
-
 /* TITLE BANNER */
 
 div.banner {
