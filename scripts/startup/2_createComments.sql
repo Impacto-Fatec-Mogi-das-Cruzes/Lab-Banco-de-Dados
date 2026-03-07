@@ -3,7 +3,7 @@ COMMENT ON COLUMN DEV.QUALIDADES.qal_nome IS 'Termo para indicar a qualidade do 
 
 COMMENT ON COLUMN DEV.FORNECEDORES.foc_id IS 'Chave Primária, identificador único de qualidade';
 COMMENT ON COLUMN DEV.FORNECEDORES.foc_nome IS 'Nome do Fornecedor';
-COMMENT ON COLUMN DEV.FORNECEDORES.foc_difereca IS 'Valor que foi pago a mais(negativo) ou a menos(positivo) na hora hora de pagamento de um pedido';
+COMMENT ON COLUMN DEV.FORNECEDORES.foc_diferenca IS 'Valor que foi pago a mais(negativo) ou a menos(positivo) na hora hora de pagamento de um pedido';
 
 COMMENT ON COLUMN DEV.STATUS.stt_id IS 'Chave Primária, identificador único de qualidade';
 COMMENT ON COLUMN DEV.STATUS.stt_nome IS 'Termo para indicar o status de um pedido';
