@@ -49,18 +49,46 @@ cd Lab-Banco-Dados
 ```bash
 docker run -d --name OraDB_Curricularizacao -p 1521:1521 -e ORACLE_PWD=s3nha -v ./scripts:/opt/oracle/scripts container-registry.oracle.com/database/express:21.3.0-xe
 ```
-*Obs:* Para mais informações em relação à imagem utilizada, visite a [documentação](https://container-registry.oracle.com/ords/ocr/ba/database/express) da imagem.
+*Obs: Para mais informações em relação à imagem utilizada, visite a [documentação](https://container-registry.oracle.com/ords/ocr/ba/database/express) da imagem.*
 
 ### 4. Pós-inicialização
-Após a inicialização mova os scripts da pasta `startup` para evitar erros na próxima inicialização do container.
+Após a inicialização retire os scripts da pasta `startup` localizado em `scripts/startup/` para evitar erros na próxima inicialização do container.
 
 ---
 
 ## Informações de acesso ao Banco
-| Field            | Data      |
+| Campo            | Dado      |
 |:----------------:|:---------:|
 | Username         | DEV       |
 | Password         | d3v       |
 | Hostname         | localhost |
 | Port             | 1521      |
 | SID/Service Name | xe        |
+
+---
+
+## Povoando o Banco
+### 1. Crie a tabela de dados
+Crie a tabela `DADOS` usando o script `createDados.sql`, localizado em `scripts/populate/`.
+
+### 2. Importe os dados
+Usando uma ferramenta externa como o **Oracle SQL Developer**, importe os dados do csv `pedidos_verduras.csv` em `scripts/populate/data/` para a tabela `DADOS`, conecte cada coluna equivalente:
+| CSV                  | Coluna               |
+| :------------------: | :------------------: |
+| Data do Pedido       | DATA_DO_PEDIDO       |
+| Status do Pedido     | STATUS_DO_PEDIDO     |
+| Nome Fornecedor      | NOME_FORNECEDOR      |
+| Produtos             | PRODUTOS             |
+| Quantidades          | QUANTIDADES          |
+| Valor Total          | VALOR_TOTAL          |
+| Diferença            | DIFERENCA            |
+| Valor Pago           | VALOR_PAGO           |
+| Qualidade do Produto | QUALIDADE_DO_PRODUTO |
+
+*Obs: O delimitador usado nesse csv é o **ponto e vírgula (\;)***
+
+### 3. Popule as tabelas
+Use o script `importData.sql` em `scripts/populate/`, para colocar cada valor em `DADOS` nas tabelas corretas.
+
+### 4. Delete a tabela DADOS (Opcional)
+Deletar a tabela de DADOS não é estritamente necessário, porém mantém o ambiente mais limpo. Use o script `dropDados.sql` em `scripts/populate/` para deletar a tabela.
