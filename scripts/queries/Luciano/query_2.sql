@@ -1,13 +1,3 @@
--- Total de Produtos Comprados
-SELECT
-    p.PDT_NOME AS "Produto",
-    SUM(pp.PPD_QUANTIDADE) AS "Quantidade"
-FROM PEDIDOS_PRODUTOS pp
-JOIN PRODUTOS p ON pp.PPD_PDT_ID = p.PDT_ID
-GROUP BY pp.PPD_PDT_ID, p.PDT_NOME
-
-/
-
 -- Porcentagem de Pedidos Pago a Mais, Menos e Exatos
 SELECT
     COALESCE(ROUND(SUM(CASE WHEN p.PDD_VALOR_TOTAL - p.PDD_VALOR_PAGO > 0 THEN 1 END)*100 / COUNT(p.PDD_ID), 2), 0) AS "Pago a menos", 
