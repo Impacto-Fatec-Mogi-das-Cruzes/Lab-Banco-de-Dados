@@ -1,84 +1,94 @@
 <html>
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF8" />
-<link href="../report.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF8" />
+    <link href="../report.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
-<div class="banner">
-<table width="98%"><tr>
-<td><h2 class="banner">PEDIDOS</h2></td>
-</tr></table></div>
-<br/>
-<div id="masterreports">
-<div id="Master.0">
-<div class="currentmasterreport">
-<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>COLUMN_NAME</th>
-<th>DATA_TYPE</th>
-<th>NULLABLE</th>
-<th>DATA_DEFAULT</th>
-<th>COLUMN_ID</th>
-<th>COMMENTS</th>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
-<td class="currentcell">PDD_ID</td>
-<td class="currentcell">NUMBER(6,0)</td>
-<td class="currentcell">No</td>
-<td class="currentcell">null</td>
-<td class="currentcell">1</td>
-<td class="currentcell">Chave&nbsp;Primária,&nbsp;identificador&nbsp;único&nbsp;de&nbsp;pedidos</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 1)">
-<td>PDD_DATA</td>
-<td>DATE</td>
-<td>No</td>
-<td>null</td>
-<td>2</td>
-<td>Data&nbsp;em&nbsp;o&nbsp;pedido&nbsp;foi&nbsp;realizado</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 2)">
-<td>PDD_STT_ID</td>
-<td>NUMBER(6,0)</td>
-<td>No</td>
-<td>null</td>
-<td>3</td>
-<td>Chave&nbsp;estrangeira&nbsp;para&nbsp;STATUS,&nbsp;status&nbsp;do&nbsp;pedido</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 3)">
-<td>PDD_FOC_ID</td>
-<td>NUMBER(6,0)</td>
-<td>No</td>
-<td>null</td>
-<td>4</td>
-<td>Chave&nbsp;estrangeira&nbsp;para&nbsp;FORNECEDORES,&nbsp;fornecedor&nbsp;do&nbsp;produto&nbsp;do&nbsp;pedido</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 4)">
-<td>PDD_VALOR_TOTAL</td>
-<td>NUMBER(5,2)</td>
-<td>No</td>
-<td>null</td>
-<td>5</td>
-<td>Valor&nbsp;total&nbsp;do&nbsp;pedido</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 5)">
-<td>PDD_VALOR_PAGO</td>
-<td>NUMBER(5,2)</td>
-<td>No</td>
-<td>null</td>
-<td>6</td>
-<td>Valor&nbsp;pago&nbsp;do&nbsp;total&nbsp;do&nbsp;pedido</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 6)">
-<td>PDD_QAL_ID</td>
-<td>NUMBER(6,0)</td>
-<td>Yes</td>
-<td>null</td>
-<td>7</td>
-<td>Chave&nbsp;estrangeira&nbsp;para&nbsp;QUALIDADES,&nbsp;qualiade&nbsp;do&nbsp;produto</td>
-</tr>
-</table>
-</div>
-</div>
+    <div class="banner">
+        <table width="98%">
+            <tr>
+                <td>
+                    <h2 class="banner">PEDIDOS</h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <div id="masterreports">
+        <div id="Master.0">
+            <div class="currentmasterreport">
+                <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+                    <tr>
+                        <th>COLUMN_NAME</th>
+                        <th>DATA_TYPE</th>
+                        <th>NULLABLE</th>
+                        <th>DATA_DEFAULT</th>
+                        <th>COLUMN_ID</th>
+                        <th>COMMENTS</th>
+                    </tr>
+                    <tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+                        <td class="currentcell">PDD_ID</td>
+                        <td class="currentcell">NUMBER(6,0)</td>
+                        <td class="currentcell">No</td>
+                        <td class="currentcell">null</td>
+                        <td class="currentcell">1</td>
+                        <td class="currentcell">Chave&nbsp;Primária,&nbsp;identificador&nbsp;único&nbsp;de&nbsp;pedidos
+                        </td>
+                    </tr>
+                    <tr onclick="table_onSelectMasterRow(this, 0, 1)">
+                        <td>PDD_DATA</td>
+                        <td>DATE</td>
+                        <td>No</td>
+                        <td>null</td>
+                        <td>2</td>
+                        <td>Data&nbsp;em&nbsp;o&nbsp;pedido&nbsp;foi&nbsp;realizado</td>
+                    </tr>
+                    <tr onclick="table_onSelectMasterRow(this, 0, 2)">
+                        <td>PDD_STT_ID</td>
+                        <td>NUMBER(6,0)</td>
+                        <td>No</td>
+                        <td>null</td>
+                        <td>3</td>
+                        <td>Chave&nbsp;estrangeira&nbsp;para&nbsp;STATUS,&nbsp;status&nbsp;do&nbsp;pedido</td>
+                    </tr>
+                    <tr onclick="table_onSelectMasterRow(this, 0, 3)">
+                        <td>PDD_FOC_ID</td>
+                        <td>NUMBER(6,0)</td>
+                        <td>No</td>
+                        <td>null</td>
+                        <td>4</td>
+                        <td>Chave&nbsp;estrangeira&nbsp;para&nbsp;FORNECEDORES,&nbsp;fornecedor&nbsp;do&nbsp;produto&nbsp;do&nbsp;pedido
+                        </td>
+                    </tr>
+                    <tr onclick="table_onSelectMasterRow(this, 0, 4)">
+                        <td>PDD_VALOR_TOTAL</td>
+                        <td>NUMBER(5,2)</td>
+                        <td>No</td>
+                        <td>null</td>
+                        <td>5</td>
+                        <td>Valor&nbsp;total&nbsp;do&nbsp;pedido</td>
+                    </tr>
+                    <tr onclick="table_onSelectMasterRow(this, 0, 5)">
+                        <td>PDD_VALOR_PAGO</td>
+                        <td>NUMBER(5,2)</td>
+                        <td>No</td>
+                        <td>null</td>
+                        <td>6</td>
+                        <td>Valor&nbsp;pago&nbsp;do&nbsp;total&nbsp;do&nbsp;pedido</td>
+                    </tr>
+                    <tr onclick="table_onSelectMasterRow(this, 0, 6)">
+                        <td>PDD_QAL_ID</td>
+                        <td>NUMBER(6,0)</td>
+                        <td>Yes</td>
+                        <td>null</td>
+                        <td>7</td>
+                        <td>Chave&nbsp;estrangeira&nbsp;para&nbsp;QUALIDADES,&nbsp;qualiade&nbsp;do&nbsp;produto</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 </body>
+
 </html>

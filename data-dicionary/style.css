@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     background-color: #181818;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,7 +14,7 @@ body {
     background-color: white;
     padding: 40px 60px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 #main-table ul {
@@ -33,7 +33,6 @@ a {
 
 fieldset {
     border-radius: 10px;
-    
 }
 
 fieldset:hover {
