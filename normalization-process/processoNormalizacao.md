@@ -82,4 +82,4 @@
 | 5 | Couve Tronchuda |
 
 ## Tabela Normalizada
-<img style="background-color: white" src="diagrama.svg">
+<img src="diagrama.svg">

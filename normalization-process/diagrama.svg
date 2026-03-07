@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1094.4399719238281" height="1167" xmlns:xlink="http://www.w3.org/1999/xlink" joint-selector="svg" id="v-324" viewBox="-30 -30 1094.4399719238281 1167"><style id="v-3" type="text/css"><![CDATA[
+<svg xmlns="http://www.w3.org/2000/svg" width="1094.4399719238281" height="1167" xmlns:xlink="http://www.w3.org/1999/xlink" joint-selector="svg" id="v-324" viewBox="-30 -30 1094.4399719238281 1167">
+<rect x="-30" y="-30" width="1094.4399719238281" height="1167" fill="white"/>
+<style id="v-3" type="text/css"><![CDATA[
         .joint-element .scalable * {
             vector-effect: non-scaling-stroke;
         }
