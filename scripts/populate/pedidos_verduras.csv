@@ -1,0 +1,694 @@
+Data do Pedido;Status do Pedido;Nome Fornecedor;Produtos;Quantidades;Valor Total;Diferença;Valor Pago;Qualidade do Produto
+04/01/2024;Entregue;Rafael Almeida;Cebolinha;5;15.0;0.0;15.0;Ruim
+07/01/2024;Parcial;João Pereira;Couve Tronchuda, Rúcula;12,17;139.0;2.58;136.42;Ruim
+08/01/2024;Entregue;João Pereira;Alface Roxa, Couve Tronchuda, Couve Manteiga;12,20,10;183.0;0.0;183.0;Regular
+12/01/2024;Entregue;Mariana Costa;Rabanete, Repolho Roxo;6,14;101.0;-20.1;121.1;Regular
+12/01/2024;Entregue;João Pereira;Alface Roxa, Rúcula, Agrião;19,9,7;149.0;-16.14;165.14;Bom
+12/01/2024;Entregue;Rafael Almeida;Cebolinha;18;54.0;0.0;54.0;Bom
+13/01/2024;Entregue;Carlos Lima;Repolho Roxo, Couve-flor;20,16;222.0;0.0;222.0;Bom
+15/01/2024;Entregue;Rafael Almeida;Cebolinha, Alho-poró, Chicória;12,15,6;150.0;-9.06;159.06;Ruim
+18/01/2024;Parcial;Mariana Costa;Rabanete, Beterraba;20,10;130.0;9.34;120.66;Bom
+18/01/2024;Entregue;Pedro Santos;Alface Crespa;14;56.0;0.0;56.0;Ruim
+19/01/2024;Entregue;Maria Souza;Chicória, Escarola, Espinafre, Almeirão;14,19,10,12;239.5;5.15;234.35;Regular
+20/01/2024;Entregue;João Pereira;Couve Manteiga, Couve Tronchuda, Alface Roxa, Alface Americana;6,11,8,9;144.5;0.0;144.5;Bom
+20/01/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;6,11;51.0;-8.31;59.31;Bom
+20/01/2024;Parcial;Maria Souza;Acelga, Almeirão, Chicória, Mostarda (folha);8,6,7,15;163.5;2.35;161.15;Bom
+21/01/2024;Entregue;Fernanda Rocha;Alface Lisa;6;24.0;-2.02;26.02;Bom
+21/01/2024;Entregue;João Pereira;Couve Tronchuda, Rúcula, Alface Roxa;19,11,5;160.5;0.0;160.5;Regular
+23/01/2024;Entregue;João Pereira;Alface Crespa;10;40.0;1.45;38.55;Ruim
+24/01/2024;Parcial;Pedro Santos;Couve Tronchuda;13;58.5;3.09;55.41;Bom
+24/01/2024;Entregue;Pedro Santos;Espinafre, Couve Manteiga, Alface Crespa, Alface Lisa;9,13,5,13;175.5;-20.33;195.83;Regular
+25/01/2024;Entregue;Pedro Santos;Alface Crespa;12;48.0;0.0;48.0;Regular
+25/01/2024;Entregue;Mariana Costa;Almeirão, Repolho Roxo;14,5;83.5;0.0;83.5;Regular
+28/01/2024;Parcial;Fernanda Rocha;Couve Tronchuda, Alface Americana, Salsa, Alface Lisa;14,17,5,14;202.0;12.54;189.46;Regular
+29/01/2024;Entregue;Carlos Lima;Couve-flor, Repolho Verde;11,10;127.0;0.0;127.0;Bom
+29/01/2024;Entregue;Lucas Ferreira;Brócolis Ninja, Couve-flor, Rúcula;15,19,8;270.5;6.87;263.63;Regular
+29/01/2024;Entregue;João Pereira;Alface Crespa;6;24.0;0.0;24.0;Bom
+29/01/2024;Entregue;Lucas Ferreira;Couve-flor, Agrião, Rúcula, Brócolis Ninja;19,8,11,6;259.0;0.0;259.0;Regular
+29/01/2024;Entregue;Rafael Almeida;Cebolinha, Alho-poró;15,14;129.0;0.0;129.0;Regular
+31/01/2024;Parcial;Pedro Santos;Alface Crespa, Alface Lisa;11,18;116.0;1.35;114.65;Bom
+01/02/2024;Entregue;Pedro Santos;Alface Roxa, Alface Crespa, Couve Manteiga, Espinafre;16,7,5,6;144.5;0.0;144.5;Regular
+04/02/2024;Entregue;Rafael Almeida;Alho-poró, Chicória, Cebolinha;11,15,20;186.0;0.0;186.0;Regular
+08/02/2024;Entregue;Pedro Santos;Couve Manteiga, Espinafre, Alface Lisa;18,15,16;220.0;0.0;220.0;Bom
+10/02/2024;Entregue;Pedro Santos;Alface Lisa;20;80.0;0.0;80.0;Regular
+11/02/2024;Entregue;João Pereira;Agrião, Rúcula, Alface Crespa, Couve Manteiga;10,9,20,16;237.0;0.0;237.0;Bom
+11/02/2024;Parcial;Mariana Costa;Almeirão, Repolho Verde;8,8;72.0;3.75;68.25;Ruim
+12/02/2024;Entregue;Carlos Lima;Repolho Verde, Repolho Roxo, Couve-flor, Brócolis Ninja;15,16,14,11;332.5;0.0;332.5;Regular
+13/02/2024;Parcial;Pedro Santos;Couve Tronchuda, Alface Lisa, Couve Manteiga;16,12,17;196.5;9.01;187.49;Regular
+13/02/2024;Parcial;Pedro Santos;Couve Manteiga, Alface Americana, Alface Lisa, Couve Tronchuda;10,19,15,19;266.5;15.51;250.99;Regular
+16/02/2024;Entregue;Fernanda Rocha;Couve Tronchuda, Alface Americana;13,15;118.5;0.0;118.5;Bom
+17/02/2024;Entregue;João Pereira;Agrião, Alface Roxa, Alface Lisa, Rúcula;14,18,19,16;284.0;-47.07;331.07;Bom
+18/02/2024;Entregue;Fernanda Rocha;Alface Crespa, Alface Americana, Alface Lisa;12,14,20;184.0;-26.66;210.66;Regular
+18/02/2024;Entregue;Pedro Santos;Espinafre, Alface Crespa, Alface Lisa, Alface Americana;8,14,16,13;212.0;-35.91;247.91;Bom
+20/02/2024;Entregue;Maria Souza;Espinafre, Acelga, Mostarda (folha);13,8,16;181.0;0.0;181.0;Bom
+20/02/2024;Parcial;Carlos Lima;Repolho Verde;13;65.0;4.49;60.51;Bom
+21/02/2024;Entregue;Rafael Almeida;Cebolinha;12;36.0;0.0;36.0;Bom
+22/02/2024;Entregue;Carlos Lima;Repolho Verde, Couve-flor, Brócolis Ninja;20,5,9;193.5;5.53;187.97;Bom
+22/02/2024;Entregue;Mariana Costa;Almeirão, Rabanete, Repolho Verde, Repolho Roxo;15,13,10,20;272.0;0.0;272.0;Bom
+25/02/2024;Parcial;Fernanda Rocha;Salsa, Couve Tronchuda, Alface Lisa;17,13,16;173.5;12.66;160.84;Regular
+26/02/2024;Parcial;Maria Souza;Mostarda (folha);12;54.0;1.37;52.63;Bom
+26/02/2024;Entregue;Fernanda Rocha;Alface Americana, Couve Manteiga;10,16;112.0;-9.02;121.02;Bom
+27/02/2024;Entregue;Lucas Ferreira;Rúcula, Brócolis Ninja, Agrião;17,7,5;150.5;0.0;150.5;Regular
+27/02/2024;Entregue;Mariana Costa;Rabanete;11;44.0;0.0;44.0;Regular
+28/02/2024;Parcial;Maria Souza;Almeirão, Chicória, Escarola;14,20,17;212.5;16.76;195.74;Regular
+01/03/2024;Parcial;Mariana Costa;Beterraba;5;25.0;2.15;22.85;Regular
+01/03/2024;Entregue;Fernanda Rocha;Alface Crespa, Couve Manteiga, Alface Lisa, Salsa;15,17,17,10;234.5;7.69;226.81;Bom
+07/03/2024;Entregue;Fernanda Rocha;Alface Americana, Alface Crespa;17,7;96.0;0.0;96.0;Regular
+08/03/2024;Entregue;Maria Souza;Escarola, Almeirão, Mostarda (folha);13,9,17;171.0;0.0;171.0;Bom
+09/03/2024;Entregue;João Pereira;Couve Tronchuda, Alface Roxa, Alface Lisa, Couve Manteiga;11,6,16,8;173.5;-2.11;175.61;Bom
+11/03/2024;Parcial;Carlos Lima;Repolho Verde;14;70.0;0.81;69.19;Regular
+11/03/2024;Entregue;Carlos Lima;Repolho Roxo, Repolho Verde, Brócolis Ninja;12,7,6;140.0;-23.58;163.58;Ruim
+15/03/2024;Entregue;João Pereira;Alface Crespa;12;48.0;-4.24;52.24;Bom
+15/03/2024;Entregue;Fernanda Rocha;Couve Tronchuda, Couve Manteiga, Alface Americana;8,9,14;132.5;-16.84;149.34;Bom
+17/03/2024;Entregue;Pedro Santos;Alface Americana, Alface Lisa, Espinafre;19,10,17;201.0;0.0;201.0;Bom
+17/03/2024;Parcial;Mariana Costa;Repolho Verde, Rabanete, Beterraba;13,10,12;165.0;7.53;157.47;Bom
+20/03/2024;Entregue;Rafael Almeida;Cebolinha, Chicória, Alho-poró;5,8,14;131.0;0.0;131.0;Bom
+20/03/2024;Entregue;Pedro Santos;Couve Tronchuda, Alface Crespa, Alface Americana;14,7,11;135.0;-21.05;156.05;Regular
+20/03/2024;Entregue;Carlos Lima;Repolho Roxo, Repolho Verde, Brócolis Ninja, Couve-flor;14,10,19,15;355.5;0.0;355.5;Regular
+22/03/2024;Entregue;Fernanda Rocha;Couve Tronchuda, Alface Roxa;18,19;157.0;0.0;157.0;Bom
+22/03/2024;Parcial;Fernanda Rocha;Couve Tronchuda, Alface Americana;12,19;130.0;3.35;126.65;Bom
+24/03/2024;Entregue;João Pereira;Alface Lisa, Couve Tronchuda, Couve Manteiga;9,13,13;153.0;-12.38;165.38;Regular
+25/03/2024;Entregue;Carlos Lima;Brócolis Ninja, Couve-flor, Repolho Verde, Repolho Roxo;19,19,14,20;436.5;0.0;436.5;Bom
+25/03/2024;Entregue;Fernanda Rocha;Alface Crespa, Alface Roxa;14,19;132.0;0.0;132.0;Regular
+25/03/2024;Parcial;Lucas Ferreira;Agrião, Rúcula, Couve-flor;11,15,19;252.0;10.19;241.81;Regular
+25/03/2024;Parcial;Pedro Santos;Alface Americana;8;32.0;0.01;31.99;Bom
+26/03/2024;Entregue;Carlos Lima;Repolho Verde, Brócolis Ninja, Repolho Roxo, Couve-flor;18,7,12,9;264.5;0.0;264.5;Bom
+27/03/2024;Entregue;Rafael Almeida;Cebolinha, Alho-poró;17,14;135.0;-17.63;152.63;Regular
+27/03/2024;Parcial;Carlos Lima;Couve-flor, Repolho Verde, Brócolis Ninja;17,19,19;337.5;10.74;326.76;Regular
+27/03/2024;Entregue;Carlos Lima;Brócolis Ninja;20;130.0;5.89;124.11;Bom
+30/03/2024;Entregue;Rafael Almeida;Chicória, Alho-poró, Cebolinha;9,5,7;87.0;0.0;87.0;Regular
+31/03/2024;Entregue;Maria Souza;Espinafre, Escarola;11,12;109.0;0.0;109.0;Regular
+01/04/2024;Entregue;João Pereira;Alface Lisa;16;64.0;0.0;64.0;Regular
+01/04/2024;Entregue;Carlos Lima;Repolho Roxo, Brócolis Ninja, Couve-flor;18,13,6;225.5;0.0;225.5;Bom
+03/04/2024;Entregue;Fernanda Rocha;Alface Americana;13;52.0;0.0;52.0;Bom
+03/04/2024;Entregue;Pedro Santos;Couve Tronchuda, Espinafre;5,9;67.5;0.0;67.5;Regular
+03/04/2024;Entregue;Rafael Almeida;Cebolinha, Alho-poró;10,18;138.0;0.0;138.0;Bom
+04/04/2024;Parcial;Ana Oliveira;Cebolinha;13;39.0;2.59;36.41;Regular
+05/04/2024;Entregue;Fernanda Rocha;Alface Roxa, Salsa, Alface Lisa, Couve Manteiga;10,9,19,11;192.5;3.32;189.18;Bom
+05/04/2024;Entregue;Ana Oliveira;Salsa, Cebolinha;10,12;66.0;0.0;66.0;Bom
+06/04/2024;Parcial;Ana Oliveira;Cebolinha, Salsa;12,10;66.0;5.89;60.11;Regular
+07/04/2024;Parcial;Pedro Santos;Espinafre, Alface Americana, Alface Crespa, Couve Manteiga;13,9,14,19;242.5;0.29;242.21;Regular
+08/04/2024;Entregue;João Pereira;Alface Roxa;16;64.0;0.0;64.0;Regular
+09/04/2024;Entregue;Pedro Santos;Couve Tronchuda, Alface Crespa, Alface Americana, Espinafre;11,20,14,11;240.5;8.52;231.98;Regular
+10/04/2024;Entregue;Carlos Lima;Repolho Roxo, Brócolis Ninja, Couve-flor;19,9,19;296.0;-45.7;341.7;Bom
+12/04/2024;Entregue;Maria Souza;Acelga, Almeirão, Escarola;17,13,19;231.0;0.0;231.0;Bom
+13/04/2024;Entregue;Fernanda Rocha;Couve Tronchuda, Alface Crespa;16,14;128.0;0.0;128.0;Bom
+13/04/2024;Entregue;João Pereira;Couve Manteiga, Rúcula, Alface Roxa;15,12,13;179.5;0.0;179.5;Ruim
+15/04/2024;Entregue;João Pereira;Alface Crespa, Agrião;15,13;112.0;0.0;112.0;Regular
+16/04/2024;Entregue;João Pereira;Alface Americana, Couve Tronchuda, Couve Manteiga;15,6,16;159.0;-31.22;190.22;Regular
+16/04/2024;Entregue;Pedro Santos;Alface Lisa, Espinafre;13,11;107.0;0.0;107.0;Regular
+18/04/2024;Entregue;Maria Souza;Chicória;17;68.0;0.0;68.0;Regular
+21/04/2024;Entregue;Mariana Costa;Repolho Verde, Repolho Roxo, Beterraba;5,6,13;123.0;0.0;123.0;Regular
+23/04/2024;Parcial;Mariana Costa;Repolho Roxo;11;60.5;4.91;55.59;Bom
+24/04/2024;Entregue;Ana Oliveira;Cebolinha;11;33.0;-3.72;36.72;Bom
+24/04/2024;Parcial;Rafael Almeida;Alho-poró;17;102.0;1.33;100.67;Regular
+24/04/2024;Parcial;Pedro Santos;Alface Lisa, Espinafre, Couve Tronchuda, Alface Roxa;14,18,14,6;233.0;17.75;215.25;Bom
+27/04/2024;Entregue;Ana Oliveira;Cebolinha;14;42.0;0.0;42.0;Regular
+28/04/2024;Entregue;Pedro Santos;Couve Tronchuda, Alface Roxa, Alface Lisa;7,10,20;151.5;0.0;151.5;Bom
+28/04/2024;Entregue;Carlos Lima;Repolho Verde;13;65.0;1.91;63.09;Regular
+29/04/2024;Entregue;Mariana Costa;Almeirão, Repolho Roxo;7,18;127.0;0.0;127.0;Regular
+29/04/2024;Entregue;Maria Souza;Mostarda (folha), Chicória, Almeirão, Escarola;5,5,7,7;102.0;0.0;102.0;Regular
+30/04/2024;Parcial;Lucas Ferreira;Agrião, Rúcula, Couve-flor;16,6,11;171.0;12.88;158.12;Regular
+01/05/2024;Entregue;Pedro Santos;Alface Lisa, Espinafre;13,6;82.0;-8.16;90.16;Bom
+02/05/2024;Entregue;Rafael Almeida;Cebolinha, Chicória, Alho-poró;9,18,11;165.0;0.0;165.0;Bom
+02/05/2024;Parcial;Ana Oliveira;Salsa, Cebolinha;13,7;60.0;5.2;54.8;Ruim
+02/05/2024;Entregue;Pedro Santos;Alface Lisa;10;40.0;0.0;40.0;Bom
+02/05/2024;Entregue;Pedro Santos;Alface Crespa, Espinafre, Couve Tronchuda;15,8,16;172.0;0.0;172.0;Bom
+02/05/2024;Entregue;Lucas Ferreira;Rúcula, Brócolis Ninja;19,9;153.5;0.0;153.5;Bom
+03/05/2024;Entregue;João Pereira;Alface Crespa;11;44.0;0.0;44.0;Regular
+08/05/2024;Entregue;Lucas Ferreira;Couve-flor, Agrião, Rúcula;12,15,14;214.0;-26.76;240.76;Ruim
+08/05/2024;Entregue;Lucas Ferreira;Agrião, Rúcula, Couve-flor, Brócolis Ninja;20,12,7,15;286.5;0.0;286.5;Regular
+09/05/2024;Entregue;Pedro Santos;Alface Roxa, Couve Tronchuda;5,13;78.5;0.0;78.5;Bom
+10/05/2024;Entregue;Maria Souza;Chicória, Mostarda (folha), Almeirão;15,19,13;197.5;0.0;197.5;Bom
+11/05/2024;Entregue;Ana Oliveira;Cebolinha;13;39.0;-3.06;42.06;Bom
+11/05/2024;Entregue;Fernanda Rocha;Couve Tronchuda, Alface Crespa, Alface Americana, Alface Lisa;14,8,15,19;231.0;0.0;231.0;Ruim
+12/05/2024;Entregue;João Pereira;Alface Lisa, Alface Roxa, Agrião, Rúcula;20,15,10,15;255.0;0.0;255.0;Bom
+12/05/2024;Entregue;Mariana Costa;Beterraba;17;85.0;0.0;85.0;Bom
+14/05/2024;Entregue;Lucas Ferreira;Agrião;19;76.0;0.0;76.0;Bom
+15/05/2024;Entregue;João Pereira;Rúcula, Couve Manteiga;11,14;118.0;0.0;118.0;Regular
+19/05/2024;Entregue;Lucas Ferreira;Rúcula, Agrião;12,15;120.0;0.0;120.0;Regular
+19/05/2024;Entregue;Carlos Lima;Repolho Roxo, Couve-flor, Repolho Verde;8,12,8;168.0;0.0;168.0;Bom
+20/05/2024;Entregue;Rafael Almeida;Chicória;9;36.0;0.0;36.0;Regular
+20/05/2024;Parcial;Pedro Santos;Espinafre, Alface Americana, Couve Tronchuda;6,16,20;184.0;4.83;179.17;Bom
+22/05/2024;Entregue;Ana Oliveira;Salsa, Cebolinha;10,5;45.0;0.88;44.12;Bom
+22/05/2024;Parcial;Pedro Santos;Alface Lisa, Alface Roxa, Alface Americana, Alface Crespa;13,11,18,14;224.0;20.02;203.98;Regular
+24/05/2024;Parcial;Mariana Costa;Repolho Roxo, Beterraba, Repolho Verde;18,15,8;214.0;7.51;206.49;Ruim
+26/05/2024;Entregue;Pedro Santos;Couve Tronchuda, Couve Manteiga, Alface Crespa, Espinafre;17,8,16,10;226.5;-5.44;231.94;Bom
+27/05/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;9,7;48.0;0.0;48.0;Ruim
+27/05/2024;Entregue;Rafael Almeida;Alho-poró;6;36.0;0.0;36.0;Regular
+27/05/2024;Entregue;Carlos Lima;Couve-flor;17;119.0;0.0;119.0;Bom
+28/05/2024;Entregue;Rafael Almeida;Cebolinha;7;21.0;0.0;21.0;Regular
+28/05/2024;Parcial;João Pereira;Alface Crespa, Couve Tronchuda, Alface Roxa, Alface Americana;5,18,16,18;237.0;6.65;230.35;Bom
+30/05/2024;Parcial;Fernanda Rocha;Couve Manteiga, Salsa;8,18;90.0;2.57;87.43;Bom
+31/05/2024;Entregue;Lucas Ferreira;Agrião;16;64.0;0.0;64.0;Bom
+31/05/2024;Entregue;Pedro Santos;Couve Manteiga;19;85.5;0.0;85.5;Regular
+01/06/2024;Parcial;João Pereira;Alface Crespa, Agrião;19,14;132.0;5.58;126.42;Bom
+01/06/2024;Entregue;Lucas Ferreira;Rúcula, Brócolis Ninja, Couve-flor;8,5,11;149.5;0.0;149.5;Bom
+02/06/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;18,7;75.0;0.0;75.0;Bom
+05/06/2024;Parcial;Mariana Costa;Repolho Verde;8;40.0;1.59;38.41;Regular
+06/06/2024;Parcial;Mariana Costa;Repolho Verde;8;40.0;0.59;39.41;Regular
+09/06/2024;Entregue;João Pereira;Alface Americana, Couve Manteiga;6,14;87.0;-3.0;90.0;Regular
+10/06/2024;Entregue;Carlos Lima;Brócolis Ninja;17;110.5;0.0;110.5;Bom
+12/06/2024;Parcial;Fernanda Rocha;Alface Roxa;12;48.0;0.18;47.82;Regular
+12/06/2024;Entregue;Carlos Lima;Repolho Verde, Brócolis Ninja, Repolho Roxo;17,5,13;189.0;0.0;189.0;Regular
+13/06/2024;Entregue;Maria Souza;Escarola, Acelga;9,19;145.0;0.0;145.0;Bom
+13/06/2024;Parcial;Ana Oliveira;Salsa;9;27.0;2.03;24.97;Regular
+14/06/2024;Entregue;João Pereira;Couve Tronchuda, Couve Manteiga, Alface Lisa, Alface Roxa;15,5,12,13;190.0;-5.48;195.48;Bom
+16/06/2024;Parcial;Lucas Ferreira;Couve-flor, Rúcula, Brócolis Ninja;7,20,18;266.0;10.75;255.25;Bom
+16/06/2024;Parcial;Pedro Santos;Alface Crespa, Alface Americana;12,9;84.0;3.07;80.93;Bom
+17/06/2024;Entregue;Mariana Costa;Repolho Roxo, Rabanete, Almeirão, Repolho Verde;18,17,11,20;311.0;-35.97;346.97;Ruim
+17/06/2024;Entregue;João Pereira;Alface Roxa, Couve Tronchuda, Rúcula;15,11,12;169.5;1.13;168.37;Regular
+17/06/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;18,7;75.0;0.0;75.0;Bom
+18/06/2024;Entregue;Maria Souza;Acelga;20;110.0;0.0;110.0;Bom
+18/06/2024;Entregue;Rafael Almeida;Alho-poró, Chicória, Cebolinha;19,10,8;178.0;0.0;178.0;Regular
+20/06/2024;Entregue;Pedro Santos;Alface Roxa, Alface Crespa, Alface Lisa, Couve Tronchuda;8,10,7,14;163.0;0.0;163.0;Regular
+21/06/2024;Parcial;Rafael Almeida;Cebolinha;8;24.0;1.43;22.57;Bom
+24/06/2024;Parcial;Lucas Ferreira;Couve-flor, Agrião;10,6;94.0;7.0;87.0;Regular
+28/06/2024;Entregue;Lucas Ferreira;Rúcula, Agrião, Couve-flor;18,12,20;278.0;0.0;278.0;Bom
+29/06/2024;Entregue;Pedro Santos;Espinafre, Couve Manteiga, Alface Lisa, Alface Roxa;6,8,20,16;210.0;-30.77;240.77;Regular
+30/06/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;12,9;63.0;0.0;63.0;Bom
+03/07/2024;Entregue;Ana Oliveira;Salsa, Cebolinha;13,7;60.0;0.0;60.0;Bom
+03/07/2024;Entregue;Maria Souza;Espinafre, Chicória;17,7;113.0;0.0;113.0;Regular
+04/07/2024;Parcial;Ana Oliveira;Salsa, Cebolinha;14,17;93.0;7.1;85.9;Bom
+06/07/2024;Entregue;Maria Souza;Chicória, Mostarda (folha), Escarola;19,11,8;161.5;0.0;161.5;Regular
+06/07/2024;Entregue;Mariana Costa;Rabanete;5;20.0;0.0;20.0;Bom
+06/07/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;15,20;105.0;0.0;105.0;Bom
+07/07/2024;Entregue;João Pereira;Agrião;15;60.0;-11.49;71.49;Bom
+08/07/2024;Parcial;Maria Souza;Mostarda (folha), Almeirão;8,5;56.0;1.28;54.72;Bom
+08/07/2024;Entregue;Maria Souza;Almeirão, Mostarda (folha);18,11;121.5;0.0;121.5;Regular
+09/07/2024;Entregue;Pedro Santos;Alface Americana, Couve Manteiga, Espinafre;20,19,18;255.5;-1.59;257.09;Regular
+09/07/2024;Entregue;Rafael Almeida;Chicória, Cebolinha, Alho-poró;18,15,10;177.0;0.0;177.0;Bom
+11/07/2024;Parcial;João Pereira;Couve Tronchuda;11;49.5;0.11;49.39;Regular
+12/07/2024;Entregue;Maria Souza;Almeirão, Escarola;14,8;92.0;-3.44;95.44;Regular
+12/07/2024;Entregue;Fernanda Rocha;Alface Lisa, Couve Manteiga;10,14;103.0;0.0;103.0;Bom
+14/07/2024;Parcial;Mariana Costa;Beterraba, Repolho Roxo, Almeirão, Rabanete;7,12,19,10;217.0;0.2;216.8;Regular
+14/07/2024;Entregue;Ana Oliveira;Cebolinha;17;51.0;0.0;51.0;Regular
+16/07/2024;Entregue;Pedro Santos;Couve Manteiga, Alface Lisa, Alface Roxa, Alface Crespa;19,5,17,19;249.5;0.0;249.5;Bom
+17/07/2024;Entregue;Rafael Almeida;Cebolinha;20;60.0;0.0;60.0;Bom
+17/07/2024;Entregue;Mariana Costa;Repolho Verde, Rabanete, Repolho Roxo;10,20,16;218.0;-21.54;239.54;Bom
+17/07/2024;Entregue;Mariana Costa;Repolho Verde, Rabanete, Repolho Roxo, Almeirão;6,14,20,17;264.0;-25.01;289.01;Ruim
+18/07/2024;Entregue;Rafael Almeida;Cebolinha, Alho-poró, Chicória;19,8,16;169.0;0.0;169.0;Bom
+21/07/2024;Entregue;Pedro Santos;Espinafre;19;95.0;0.0;95.0;Bom
+22/07/2024;Entregue;João Pereira;Alface Roxa, Alface Americana, Alface Lisa;14,6,9;116.0;0.0;116.0;Bom
+22/07/2024;Entregue;Mariana Costa;Rabanete;15;60.0;0.59;59.41;Bom
+24/07/2024;Entregue;Rafael Almeida;Chicória, Alho-poró, Cebolinha;12,7,12;126.0;0.0;126.0;Bom
+24/07/2024;Entregue;Lucas Ferreira;Rúcula, Agrião;17,15;145.0;0.0;145.0;Bom
+24/07/2024;Entregue;Fernanda Rocha;Alface Americana;11;44.0;0.0;44.0;Bom
+26/07/2024;Parcial;Mariana Costa;Rabanete;6;24.0;2.0;22.0;Regular
+27/07/2024;Entregue;Maria Souza;Mostarda (folha), Almeirão;6,20;107.0;-10.33;117.33;Bom
+27/07/2024;Entregue;Ana Oliveira;Salsa, Cebolinha;14,17;93.0;0.0;93.0;Ruim
+27/07/2024;Parcial;Ana Oliveira;Cebolinha, Salsa;8,7;45.0;4.0;41.0;Bom
+02/08/2024;Entregue;Carlos Lima;Repolho Roxo;19;104.5;0.0;104.5;Ruim
+02/08/2024;Entregue;Fernanda Rocha;Couve Manteiga, Salsa, Alface Crespa, Alface Americana;12,10,7,9;148.0;-16.95;164.95;Bom
+02/08/2024;Entregue;João Pereira;Couve Tronchuda, Alface Americana;13,6;82.5;0.0;82.5;Bom
+02/08/2024;Entregue;Rafael Almeida;Alho-poró;19;114.0;0.0;114.0;Bom
+04/08/2024;Entregue;Pedro Santos;Espinafre, Alface Crespa, Alface Roxa, Alface Lisa;17,14,8,18;245.0;-27.4;272.4;Regular
+07/08/2024;Entregue;Pedro Santos;Alface Lisa;18;72.0;-5.89;77.89;Regular
+07/08/2024;Parcial;Pedro Santos;Couve Manteiga, Alface Lisa, Espinafre, Alface Roxa;10,11,9,9;170.0;10.63;159.37;Regular
+08/08/2024;Parcial;Pedro Santos;Alface Crespa, Alface Americana;18,6;96.0;7.09;88.91;Bom
+09/08/2024;Entregue;Mariana Costa;Almeirão, Repolho Verde, Beterraba;8,16,17;197.0;-10.55;207.55;Bom
+10/08/2024;Entregue;Carlos Lima;Repolho Roxo;10;55.0;0.0;55.0;Bom
+12/08/2024;Parcial;Mariana Costa;Rabanete, Almeirão, Repolho Roxo;14,20,19;240.5;22.65;217.85;Ruim
+13/08/2024;Parcial;Fernanda Rocha;Salsa;12;36.0;0.84;35.16;Ruim
+14/08/2024;Parcial;Ana Oliveira;Salsa, Cebolinha;18,5;69.0;3.4;65.6;Bom
+15/08/2024;Entregue;Mariana Costa;Beterraba, Repolho Roxo, Almeirão;8,5,11;111.5;0.0;111.5;Bom
+15/08/2024;Entregue;Lucas Ferreira;Rúcula, Brócolis Ninja, Agrião;11,5,9;123.5;0.0;123.5;Bom
+19/08/2024;Entregue;Fernanda Rocha;Alface Americana, Couve Manteiga, Alface Lisa;12,10,15;153.0;-25.1;178.1;Bom
+20/08/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;9,17;78.0;0.0;78.0;Bom
+21/08/2024;Parcial;Lucas Ferreira;Brócolis Ninja, Couve-flor;19,15;228.5;22.82;205.68;Bom
+22/08/2024;Parcial;Fernanda Rocha;Alface Lisa;6;24.0;1.8;22.2;Bom
+22/08/2024;Entregue;Carlos Lima;Couve-flor, Repolho Verde, Repolho Roxo;18,18,10;271.0;0.0;271.0;Regular
+23/08/2024;Entregue;Maria Souza;Almeirão, Mostarda (folha);15,12;114.0;-15.58;129.58;Regular
+25/08/2024;Entregue;Rafael Almeida;Alho-poró, Cebolinha, Chicória;18,17,18;231.0;-38.46;269.46;Regular
+25/08/2024;Entregue;Pedro Santos;Alface Roxa, Alface Americana, Alface Crespa, Couve Manteiga;11,15,7,12;186.0;-16.47;202.47;Regular
+25/08/2024;Entregue;João Pereira;Couve Manteiga, Alface Americana, Couve Tronchuda;15,20,12;201.5;0.0;201.5;Bom
+26/08/2024;Entregue;Maria Souza;Espinafre, Mostarda (folha), Acelga;17,7,13;188.0;0.0;188.0;Ruim
+27/08/2024;Parcial;Rafael Almeida;Alho-poró, Chicória, Cebolinha;9,17,18;176.0;9.9;166.1;Ruim
+27/08/2024;Parcial;Maria Souza;Espinafre;18;90.0;7.9;82.1;Regular
+29/08/2024;Entregue;João Pereira;Couve Manteiga, Rúcula, Alface Roxa, Agrião;8,10,5,14;162.0;0.0;162.0;Bom
+30/08/2024;Entregue;Pedro Santos;Alface Roxa, Alface Crespa;17,18;140.0;0.0;140.0;Bom
+30/08/2024;Entregue;Fernanda Rocha;Alface Americana;17;68.0;0.0;68.0;Bom
+31/08/2024;Entregue;Pedro Santos;Alface Lisa, Alface Americana, Espinafre;20,11,11;179.0;0.0;179.0;Bom
+01/09/2024;Entregue;Lucas Ferreira;Brócolis Ninja;12;78.0;-0.61;78.61;Bom
+01/09/2024;Parcial;Rafael Almeida;Chicória, Cebolinha, Alho-poró;7,20,9;142.0;9.43;132.57;Bom
+01/09/2024;Parcial;João Pereira;Alface Roxa;14;56.0;4.56;51.44;Bom
+02/09/2024;Entregue;Rafael Almeida;Alho-poró;9;54.0;0.0;54.0;Bom
+04/09/2024;Entregue;Mariana Costa;Repolho Roxo, Rabanete, Beterraba, Repolho Verde;5,13,6,14;179.5;-3.41;182.91;Bom
+05/09/2024;Entregue;Ana Oliveira;Cebolinha;5;15.0;0.0;15.0;Bom
+05/09/2024;Entregue;Mariana Costa;Repolho Verde, Rabanete;10,10;90.0;-12.45;102.45;Ruim
+06/09/2024;Entregue;Lucas Ferreira;Agrião, Brócolis Ninja;17,15;165.5;0.0;165.5;Bom
+06/09/2024;Entregue;João Pereira;Alface Roxa, Alface Americana, Agrião;14,6,15;140.0;0.0;140.0;Ruim
+06/09/2024;Entregue;Pedro Santos;Espinafre, Alface Lisa;8,12;88.0;0.0;88.0;Regular
+07/09/2024;Entregue;Rafael Almeida;Alho-poró;19;114.0;-6.24;120.24;Regular
+11/09/2024;Entregue;Ana Oliveira;Salsa, Cebolinha;5,17;66.0;3.1;62.9;Regular
+12/09/2024;Entregue;Carlos Lima;Repolho Roxo, Repolho Verde, Couve-flor;7,13,7;152.5;0.0;152.5;Bom
+12/09/2024;Entregue;Rafael Almeida;Cebolinha;18;54.0;0.0;54.0;Regular
+13/09/2024;Entregue;Mariana Costa;Repolho Roxo, Beterraba, Almeirão;5,13,9;128.5;0.0;128.5;Bom
+14/09/2024;Entregue;João Pereira;Alface Lisa, Couve Tronchuda;7,15;95.5;0.0;95.5;Regular
+15/09/2024;Entregue;João Pereira;Rúcula;10;50.0;-4.41;54.41;Bom
+15/09/2024;Entregue;Rafael Almeida;Cebolinha, Chicória;5,18;87.0;0.0;87.0;Bom
+17/09/2024;Parcial;Fernanda Rocha;Couve Tronchuda, Alface Roxa, Salsa, Alface Lisa;14,16,10,20;237.0;6.16;230.84;Ruim
+18/09/2024;Entregue;Rafael Almeida;Chicória, Cebolinha;6,8;48.0;0.0;48.0;Bom
+19/09/2024;Entregue;Ana Oliveira;Salsa;16;48.0;0.0;48.0;Bom
+20/09/2024;Entregue;Rafael Almeida;Alho-poró, Chicória;7,18;114.0;-9.95;123.95;Regular
+21/09/2024;Entregue;João Pereira;Couve Tronchuda, Alface Americana;19,10;125.5;0.0;125.5;Bom
+21/09/2024;Entregue;Rafael Almeida;Cebolinha, Alho-poró;6,13;96.0;0.0;96.0;Bom
+22/09/2024;Parcial;João Pereira;Couve Manteiga, Alface Roxa, Couve Tronchuda, Alface Lisa;6,20,19,10;232.5;18.92;213.58;Bom
+23/09/2024;Parcial;Maria Souza;Escarola, Espinafre;19,17;170.5;1.5;169.0;Regular
+24/09/2024;Entregue;Lucas Ferreira;Agrião, Couve-flor, Brócolis Ninja, Rúcula;7,19,9,7;254.5;-4.85;259.35;Regular
+25/09/2024;Parcial;Maria Souza;Mostarda (folha), Chicória, Escarola;9,16,15;172.0;8.54;163.46;Bom
+26/09/2024;Parcial;Lucas Ferreira;Brócolis Ninja, Rúcula;20,12;190.0;13.83;176.17;Bom
+27/09/2024;Parcial;Maria Souza;Escarola, Espinafre;11,5;74.5;6.82;67.68;Bom
+28/09/2024;Entregue;Lucas Ferreira;Brócolis Ninja, Couve-flor, Agrião, Rúcula;6,11,8,12;208.0;0.0;208.0;Regular
+28/09/2024;Entregue;Fernanda Rocha;Alface Roxa;7;28.0;-1.11;29.11;Regular
+29/09/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;10,7;51.0;0.0;51.0;Regular
+29/09/2024;Entregue;Mariana Costa;Repolho Roxo, Beterraba, Almeirão, Rabanete;7,6,7,19;172.5;-16.43;188.93;Bom
+02/10/2024;Entregue;Maria Souza;Escarola, Espinafre, Almeirão, Acelga;6,5,20,7;170.5;0.0;170.5;Bom
+02/10/2024;Entregue;Ana Oliveira;Salsa, Cebolinha;8,16;72.0;-2.81;74.81;Bom
+02/10/2024;Parcial;João Pereira;Alface Lisa, Alface Roxa;14,10;96.0;0.53;95.47;Bom
+04/10/2024;Entregue;Ana Oliveira;Salsa, Cebolinha;13,7;60.0;0.0;60.0;Bom
+06/10/2024;Entregue;Mariana Costa;Repolho Verde, Rabanete, Almeirão;16,19,19;232.0;0.0;232.0;Regular
+07/10/2024;Entregue;Pedro Santos;Alface Roxa;11;44.0;0.0;44.0;Bom
+08/10/2024;Parcial;Pedro Santos;Alface Crespa, Alface Lisa, Couve Tronchuda, Couve Manteiga;12,17,5,8;174.5;3.71;170.79;Regular
+08/10/2024;Entregue;Maria Souza;Espinafre, Escarola, Almeirão, Mostarda (folha);17,15,9,18;269.5;-2.5;272.0;Bom
+11/10/2024;Entregue;Mariana Costa;Repolho Verde;18;90.0;-12.08;102.08;Regular
+11/10/2024;Parcial;Rafael Almeida;Cebolinha;11;33.0;0.89;32.11;Regular
+12/10/2024;Entregue;Mariana Costa;Almeirão, Repolho Roxo;18,20;182.0;-34.39;216.39;Regular
+12/10/2024;Entregue;Fernanda Rocha;Alface Lisa;9;36.0;0.0;36.0;Regular
+15/10/2024;Parcial;Fernanda Rocha;Salsa;14;42.0;3.7;38.3;Bom
+15/10/2024;Entregue;Pedro Santos;Alface Crespa, Couve Tronchuda;9,8;72.0;0.0;72.0;Bom
+17/10/2024;Entregue;João Pereira;Couve Manteiga, Agrião, Couve Tronchuda;12,9,10;135.0;0.0;135.0;Bom
+19/10/2024;Parcial;Fernanda Rocha;Alface Crespa, Alface Lisa, Salsa, Couve Tronchuda;20,16,15,9;229.5;11.93;217.57;Bom
+19/10/2024;Entregue;Fernanda Rocha;Couve Manteiga;5;22.5;0.0;22.5;Bom
+19/10/2024;Entregue;Pedro Santos;Alface Americana, Alface Lisa, Espinafre, Couve Tronchuda;19,5,16,18;257.0;0.0;257.0;Bom
+20/10/2024;Entregue;Lucas Ferreira;Rúcula, Brócolis Ninja;20,7;145.5;0.0;145.5;Bom
+21/10/2024;Entregue;Lucas Ferreira;Couve-flor, Agrião;12,14;140.0;0.0;140.0;Ruim
+21/10/2024;Entregue;Pedro Santos;Alface Crespa, Couve Tronchuda, Alface Lisa;5,14,19;159.0;-8.19;167.19;Regular
+22/10/2024;Entregue;Ana Oliveira;Cebolinha;18;54.0;0.0;54.0;Regular
+25/10/2024;Parcial;Carlos Lima;Brócolis Ninja, Repolho Verde, Couve-flor, Repolho Roxo;12,7,6,9;204.5;15.48;189.02;Bom
+26/10/2024;Parcial;Fernanda Rocha;Alface Roxa, Salsa;14,7;77.0;4.96;72.04;Bom
+29/10/2024;Parcial;Pedro Santos;Espinafre, Alface Roxa, Alface Americana;5,18,20;177.0;10.75;166.25;Regular
+29/10/2024;Parcial;João Pereira;Rúcula;12;60.0;0.39;59.61;Regular
+30/10/2024;Entregue;Mariana Costa;Almeirão;13;52.0;-1.97;53.97;Bom
+04/11/2024;Entregue;Mariana Costa;Almeirão, Beterraba;5,5;45.0;0.57;44.43;Regular
+04/11/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;8,20;84.0;-7.53;91.53;Ruim
+04/11/2024;Entregue;Pedro Santos;Alface Lisa, Alface Roxa, Couve Manteiga, Alface Americana;18,8,15,12;219.5;6.99;212.51;Bom
+06/11/2024;Entregue;Ana Oliveira;Salsa;20;60.0;0.0;60.0;Ruim
+07/11/2024;Parcial;Lucas Ferreira;Brócolis Ninja, Rúcula, Agrião, Couve-flor;8,13,20,11;274.0;5.09;268.91;Bom
+09/11/2024;Entregue;Mariana Costa;Rabanete, Beterraba, Repolho Verde;16,14,19;229.0;-15.97;244.97;Regular
+10/11/2024;Parcial;Rafael Almeida;Cebolinha, Alho-poró, Chicória;20,20,13;232.0;14.91;217.09;Regular
+11/11/2024;Parcial;Fernanda Rocha;Alface Lisa, Couve Tronchuda, Alface Americana, Alface Crespa;9,5,13,19;186.5;12.31;174.19;Bom
+12/11/2024;Entregue;Ana Oliveira;Salsa, Cebolinha;20,16;108.0;0.0;108.0;Bom
+12/11/2024;Entregue;Mariana Costa;Rabanete;6;24.0;0.0;24.0;Bom
+12/11/2024;Entregue;Fernanda Rocha;Couve Manteiga, Couve Tronchuda, Salsa;17,9,7;138.0;-26.31;164.31;Bom
+12/11/2024;Parcial;Pedro Santos;Espinafre, Alface Roxa, Couve Manteiga;7,19,8;147.0;4.85;142.15;Bom
+13/11/2024;Entregue;Ana Oliveira;Salsa;14;42.0;0.0;42.0;Bom
+14/11/2024;Parcial;Ana Oliveira;Salsa;13;39.0;0.71;38.29;Ruim
+15/11/2024;Entregue;Fernanda Rocha;Alface Americana, Couve Tronchuda, Salsa;9,13,20;154.5;0.0;154.5;Bom
+18/11/2024;Entregue;Ana Oliveira;Cebolinha;11;33.0;0.53;32.47;Bom
+22/11/2024;Entregue;Mariana Costa;Beterraba, Repolho Roxo, Repolho Verde, Rabanete;18,16,10,8;260.0;-35.27;295.27;Bom
+22/11/2024;Entregue;Mariana Costa;Beterraba, Rabanete, Repolho Verde, Repolho Roxo;8,13,10,5;169.5;0.0;169.5;Bom
+23/11/2024;Entregue;Fernanda Rocha;Salsa, Alface Roxa;19,15;117.0;0.0;117.0;Bom
+26/11/2024;Entregue;Rafael Almeida;Cebolinha, Alho-poró;9,9;81.0;0.0;81.0;Bom
+29/11/2024;Entregue;Ana Oliveira;Cebolinha, Salsa;9,15;72.0;-9.3;81.3;Ruim
+01/12/2024;Entregue;Fernanda Rocha;Alface Crespa, Alface Lisa, Couve Tronchuda, Alface Americana;10,14,10,9;177.0;0.0;177.0;Regular
+02/12/2024;Entregue;Lucas Ferreira;Rúcula, Agrião;9,14;101.0;0.0;101.0;Bom
+04/12/2024;Parcial;Fernanda Rocha;Salsa;6;18.0;0.9;17.1;Regular
+05/12/2024;Parcial;Fernanda Rocha;Alface Roxa, Couve Manteiga, Alface Crespa;15,6,13;139.0;2.62;136.38;Regular
+05/12/2024;Entregue;Ana Oliveira;Cebolinha;7;21.0;0.0;21.0;Bom
+06/12/2024;Entregue;Ana Oliveira;Salsa, Cebolinha;17,18;105.0;-1.42;106.42;Ruim
+07/12/2024;Entregue;Rafael Almeida;Cebolinha;18;54.0;0.44;53.56;Bom
+08/12/2024;Parcial;Carlos Lima;Brócolis Ninja, Repolho Verde, Repolho Roxo, Couve-flor;6,13,15,5;221.5;11.82;209.68;Regular
+08/12/2024;Entregue;Fernanda Rocha;Alface Roxa, Couve Tronchuda;15,6;87.0;0.0;87.0;Bom
+08/12/2024;Entregue;Fernanda Rocha;Salsa, Alface Roxa;12,6;60.0;1.44;58.56;Regular
+10/12/2024;Parcial;Maria Souza;Mostarda (folha);19;85.5;6.52;78.98;Regular
+12/12/2024;Entregue;Pedro Santos;Alface Roxa, Espinafre, Alface Lisa;17,15,5;163.0;0.0;163.0;Regular
+13/12/2024;Entregue;Mariana Costa;Repolho Verde, Almeirão, Rabanete, Beterraba;14,5,19,10;216.0;-2.3;218.3;Regular
+15/12/2024;Parcial;Fernanda Rocha;Alface Roxa, Salsa;18,12;108.0;6.02;101.98;Bom
+16/12/2024;Entregue;Carlos Lima;Repolho Roxo;15;82.5;-4.86;87.36;Bom
+16/12/2024;Entregue;Pedro Santos;Couve Tronchuda, Alface Americana, Alface Crespa;11,6,15;133.5;0.0;133.5;Bom
+16/12/2024;Entregue;Pedro Santos;Alface Lisa, Couve Manteiga, Alface Americana;10,6,10;107.0;-15.27;122.27;Bom
+18/12/2024;Entregue;Rafael Almeida;Alho-poró;6;36.0;0.0;36.0;Bom
+20/12/2024;Entregue;João Pereira;Alface Americana, Alface Roxa;18,15;132.0;0.0;132.0;Bom
+21/12/2024;Entregue;Rafael Almeida;Chicória;20;80.0;0.0;80.0;Bom
+22/12/2024;Entregue;Fernanda Rocha;Salsa, Couve Manteiga, Couve Tronchuda, Alface Lisa;10,17,15,20;254.0;0.0;254.0;Bom
+24/12/2024;Entregue;Carlos Lima;Repolho Roxo;8;44.0;0.0;44.0;Regular
+24/12/2024;Entregue;Pedro Santos;Alface Roxa, Espinafre, Alface Americana;7,16,6;132.0;-24.29;156.29;Regular
+25/12/2024;Entregue;Maria Souza;Almeirão;5;20.0;0.0;20.0;Regular
+26/12/2024;Entregue;Ana Oliveira;Cebolinha;20;60.0;0.0;60.0;Bom
+26/12/2024;Entregue;Rafael Almeida;Chicória, Cebolinha;16,15;109.0;-12.53;121.53;Bom
+27/12/2024;Parcial;Carlos Lima;Brócolis Ninja, Couve-flor, Repolho Roxo, Repolho Verde;10,13,6,12;249.0;14.09;234.91;Regular
+27/12/2024;Entregue;Pedro Santos;Couve Tronchuda, Alface Lisa, Alface Crespa, Espinafre;13,10,9,20;234.5;0.0;234.5;Bom
+28/12/2024;Entregue;Ana Oliveira;Cebolinha;7;21.0;0.0;21.0;Regular
+28/12/2024;Parcial;Fernanda Rocha;Alface Roxa, Couve Tronchuda, Alface Americana, Alface Lisa;18,19,18,17;297.5;17.69;279.81;Regular
+29/12/2024;Entregue;Lucas Ferreira;Rúcula;11;55.0;0.0;55.0;Bom
+31/12/2024;Entregue;Maria Souza;Chicória, Escarola;15,5;82.5;0.92;81.58;Bom
+01/01/2025;Entregue;João Pereira;Alface Lisa, Alface Americana;12,15;108.0;-10.08;118.08;Regular
+01/01/2025;Parcial;Maria Souza;Acelga;8;44.0;0.51;43.49;Bom
+02/01/2025;Entregue;Carlos Lima;Repolho Verde, Brócolis Ninja, Couve-flor, Repolho Roxo;14,16,8,19;334.5;-30.29;364.79;Regular
+02/01/2025;Parcial;Pedro Santos;Alface Roxa, Espinafre;19,5;101.0;5.66;95.34;Regular
+02/01/2025;Entregue;Ana Oliveira;Cebolinha;16;48.0;0.0;48.0;Bom
+02/01/2025;Entregue;Fernanda Rocha;Alface Crespa, Alface Roxa, Alface Lisa, Couve Manteiga;17,10,14,9;204.5;0.0;204.5;Bom
+03/01/2025;Entregue;Maria Souza;Mostarda (folha);13;58.5;0.0;58.5;Bom
+04/01/2025;Entregue;Ana Oliveira;Cebolinha, Salsa;18,5;69.0;0.0;69.0;Ruim
+05/01/2025;Entregue;Ana Oliveira;Salsa;6;18.0;0.0;18.0;Regular
+06/01/2025;Entregue;Maria Souza;Escarola, Chicória, Espinafre, Mostarda (folha);18,12,13,12;248.0;0.0;248.0;Regular
+10/01/2025;Entregue;Carlos Lima;Couve-flor, Repolho Roxo;13,5;118.5;0.0;118.5;Bom
+12/01/2025;Entregue;Carlos Lima;Brócolis Ninja, Couve-flor, Repolho Verde;11,19,13;269.5;-50.77;320.27;Regular
+13/01/2025;Entregue;Lucas Ferreira;Couve-flor;13;91.0;0.0;91.0;Regular
+13/01/2025;Parcial;Maria Souza;Chicória, Acelga, Escarola;14,6,12;143.0;5.87;137.13;Bom
+15/01/2025;Entregue;Rafael Almeida;Cebolinha, Chicória, Alho-poró;15,6,11;135.0;3.68;131.32;Regular
+15/01/2025;Entregue;Lucas Ferreira;Rúcula, Couve-flor, Brócolis Ninja, Agrião;15,6,11,5;208.5;0.0;208.5;Bom
+16/01/2025;Entregue;Carlos Lima;Brócolis Ninja, Repolho Verde, Couve-flor;11,17,19;289.5;-26.98;316.48;Bom
+17/01/2025;Parcial;Mariana Costa;Repolho Roxo, Rabanete;20,6;134.0;10.09;123.91;Bom
+17/01/2025;Entregue;Ana Oliveira;Cebolinha, Salsa;18,9;81.0;0.0;81.0;Regular
+18/01/2025;Entregue;Mariana Costa;Repolho Verde, Repolho Roxo, Almeirão;18,5,11;161.5;2.84;158.66;Bom
+18/01/2025;Entregue;Pedro Santos;Couve Tronchuda, Alface Lisa, Espinafre, Alface Americana;10,10,14,18;227.0;0.0;227.0;Bom
+18/01/2025;Entregue;Lucas Ferreira;Agrião;16;64.0;0.0;64.0;Bom
+19/01/2025;Entregue;Maria Souza;Mostarda (folha);5;22.5;0.0;22.5;Regular
+19/01/2025;Entregue;Ana Oliveira;Salsa, Cebolinha;7,8;45.0;0.0;45.0;Bom
+20/01/2025;Entregue;Lucas Ferreira;Rúcula, Couve-flor, Brócolis Ninja, Agrião;8,5,17,17;253.5;0.0;253.5;Regular
+20/01/2025;Entregue;Fernanda Rocha;Salsa, Couve Tronchuda, Alface Americana, Alface Lisa;16,6,17,8;175.0;0.0;175.0;Regular
+20/01/2025;Parcial;Ana Oliveira;Cebolinha;18;54.0;3.57;50.43;Ruim
+22/01/2025;Entregue;Fernanda Rocha;Alface Crespa, Couve Manteiga, Salsa, Alface Americana;15,5,12,16;182.5;0.0;182.5;Regular
+23/01/2025;Entregue;Maria Souza;Espinafre, Mostarda (folha);16,18;161.0;0.0;161.0;Regular
+23/01/2025;Entregue;Carlos Lima;Repolho Roxo, Repolho Verde;11,11;115.5;-22.91;138.41;Regular
+25/01/2025;Parcial;João Pereira;Agrião;13;52.0;3.63;48.37;Bom
+26/01/2025;Entregue;Maria Souza;Chicória, Acelga, Mostarda (folha);17,17,12;215.5;0.0;215.5;Bom
+26/01/2025;Entregue;Mariana Costa;Repolho Verde, Beterraba;14,8;110.0;-17.1;127.1;Bom
+27/01/2025;Parcial;Mariana Costa;Almeirão, Repolho Verde, Repolho Roxo;12,19,13;214.5;19.4;195.1;Bom
+28/01/2025;Entregue;João Pereira;Alface Roxa, Rúcula, Couve Tronchuda;19,7,12;165.0;0.0;165.0;Bom
+29/01/2025;Entregue;Carlos Lima;Repolho Verde, Repolho Roxo;5,5;52.5;-9.71;62.21;Regular
+30/01/2025;Entregue;Carlos Lima;Repolho Roxo, Brócolis Ninja, Repolho Verde, Couve-flor;16,9,20,7;295.5;-47.71;343.21;Regular
+30/01/2025;Entregue;Rafael Almeida;Cebolinha;9;27.0;0.0;27.0;Bom
+31/01/2025;Entregue;Mariana Costa;Beterraba, Rabanete, Repolho Verde;12,7,15;163.0;0.0;163.0;Regular
+31/01/2025;Entregue;Rafael Almeida;Alho-poró, Cebolinha, Chicória;7,6,6;84.0;0.0;84.0;Bom
+04/02/2025;Entregue;Carlos Lima;Brócolis Ninja;18;117.0;0.0;117.0;Bom
+04/02/2025;Entregue;Pedro Santos;Alface Crespa;19;76.0;-3.26;79.26;Regular
+06/02/2025;Entregue;Lucas Ferreira;Agrião, Brócolis Ninja, Couve-flor;12,6,19;220.0;0.0;220.0;Bom
+09/02/2025;Parcial;Fernanda Rocha;Alface Roxa, Salsa, Alface Crespa;12,20,11;152.0;9.87;142.13;Regular
+09/02/2025;Entregue;João Pereira;Alface Roxa, Alface Lisa, Alface Crespa, Agrião;9,16,10,6;164.0;0.0;164.0;Bom
+12/02/2025;Parcial;João Pereira;Alface Lisa;5;20.0;1.48;18.52;Regular
+12/02/2025;Parcial;Pedro Santos;Alface Americana, Alface Lisa, Espinafre, Alface Roxa;10,14,8,14;192.0;13.31;178.69;Bom
+14/02/2025;Entregue;Ana Oliveira;Cebolinha;15;45.0;-1.52;46.52;Bom
+15/02/2025;Parcial;Rafael Almeida;Alho-poró, Chicória, Cebolinha;5,10,14;112.0;1.2;110.8;Regular
+15/02/2025;Entregue;Carlos Lima;Repolho Roxo, Repolho Verde;20,18;200.0;-12.17;212.17;Bom
+20/02/2025;Entregue;Mariana Costa;Rabanete;9;36.0;0.0;36.0;Bom
+20/02/2025;Entregue;Mariana Costa;Rabanete, Repolho Verde, Almeirão;12,14,5;138.0;0.0;138.0;Ruim
+23/02/2025;Entregue;Ana Oliveira;Cebolinha;16;48.0;0.0;48.0;Bom
+24/02/2025;Entregue;Mariana Costa;Beterraba, Repolho Roxo, Rabanete, Repolho Verde;7,17,6,15;227.5;0.0;227.5;Bom
+25/02/2025;Parcial;Lucas Ferreira;Rúcula, Agrião, Brócolis Ninja;15,13,5;159.5;0.1;159.4;Regular
+26/02/2025;Entregue;Fernanda Rocha;Alface Americana, Salsa;18,15;117.0;-15.55;132.55;Regular
+27/02/2025;Entregue;Lucas Ferreira;Rúcula;17;85.0;-1.17;86.17;Regular
+27/02/2025;Entregue;Carlos Lima;Repolho Roxo, Repolho Verde, Couve-flor, Brócolis Ninja;5,7,15,6;206.5;0.0;206.5;Regular
+28/02/2025;Entregue;Mariana Costa;Repolho Verde, Repolho Roxo;6,8;74.0;0.0;74.0;Bom
+28/02/2025;Entregue;Rafael Almeida;Alho-poró, Cebolinha;17,6;120.0;-9.41;129.41;Bom
+01/03/2025;Parcial;Maria Souza;Escarola;20;90.0;1.81;88.19;Bom
+03/03/2025;Entregue;Lucas Ferreira;Agrião, Couve-flor;5,8;76.0;-9.08;85.08;Regular
+04/03/2025;Entregue;Fernanda Rocha;Alface Roxa;10;40.0;-0.75;40.75;Ruim
+05/03/2025;Parcial;Pedro Santos;Alface Lisa;20;80.0;1.59;78.41;Regular
+06/03/2025;Parcial;Pedro Santos;Alface Americana, Alface Crespa;20,10;120.0;10.4;109.6;Bom
+07/03/2025;Entregue;Fernanda Rocha;Alface Lisa, Salsa;16,6;82.0;0.0;82.0;Bom
+14/03/2025;Entregue;Mariana Costa;Rabanete, Repolho Verde;16,12;124.0;0.0;124.0;Bom
+14/03/2025;Entregue;Carlos Lima;Couve-flor, Repolho Verde, Repolho Roxo;20,14,8;254.0;4.1;249.9;Bom
+14/03/2025;Entregue;Maria Souza;Mostarda (folha), Almeirão;19,18;157.5;0.0;157.5;Regular
+15/03/2025;Entregue;Fernanda Rocha;Alface Americana;12;48.0;0.0;48.0;Bom
+17/03/2025;Entregue;Rafael Almeida;Alho-poró, Chicória, Cebolinha;17,6,5;141.0;0.0;141.0;Regular
+18/03/2025;Entregue;João Pereira;Alface Americana, Alface Crespa, Couve Tronchuda, Alface Roxa;13,15,6,5;159.0;-5.1;164.1;Bom
+18/03/2025;Entregue;Rafael Almeida;Chicória, Alho-poró;16,17;166.0;-18.25;184.25;Bom
+18/03/2025;Parcial;Lucas Ferreira;Rúcula, Couve-flor;6,13;121.0;0.62;120.38;Bom
+20/03/2025;Entregue;Rafael Almeida;Cebolinha;10;30.0;0.0;30.0;Bom
+21/03/2025;Entregue;Mariana Costa;Beterraba, Rabanete;11,14;111.0;-10.09;121.09;Regular
+21/03/2025;Entregue;Carlos Lima;Brócolis Ninja;18;117.0;0.0;117.0;Bom
+21/03/2025;Parcial;Carlos Lima;Repolho Verde, Brócolis Ninja, Couve-flor, Repolho Roxo;14,8,17,10;296.0;19.16;276.84;Regular
+22/03/2025;Entregue;Carlos Lima;Couve-flor, Brócolis Ninja, Repolho Verde;12,12,8;202.0;0.0;202.0;Bom
+23/03/2025;Parcial;João Pereira;Couve Manteiga, Couve Tronchuda, Alface Americana, Agrião;20,19,20,11;299.5;13.78;285.72;Regular
+25/03/2025;Entregue;Maria Souza;Acelga, Espinafre, Chicória;8,15,16;183.0;0.0;183.0;Bom
+26/03/2025;Entregue;Ana Oliveira;Cebolinha, Salsa;7,5;36.0;0.0;36.0;Regular
+27/03/2025;Entregue;Rafael Almeida;Cebolinha;14;42.0;0.0;42.0;Bom
+29/03/2025;Entregue;Lucas Ferreira;Brócolis Ninja, Agrião, Rúcula;15,5,13;182.5;-25.93;208.43;Bom
+29/03/2025;Parcial;João Pereira;Couve Tronchuda, Alface Lisa, Rúcula;20,15,5;175.0;9.19;165.81;Bom
+29/03/2025;Entregue;Rafael Almeida;Alho-poró, Chicória, Cebolinha;13,15,7;159.0;0.06;158.94;Bom
+29/03/2025;Entregue;Mariana Costa;Rabanete, Repolho Roxo, Repolho Verde;18,11,5;157.5;0.0;157.5;Bom
+31/03/2025;Entregue;Maria Souza;Chicória;14;56.0;0.0;56.0;Regular
+02/04/2025;Entregue;João Pereira;Rúcula;7;35.0;1.5;33.5;Regular
+03/04/2025;Parcial;João Pereira;Alface Roxa, Rúcula, Agrião, Couve Tronchuda;5,12,7,17;184.5;6.44;178.06;Bom
+08/04/2025;Entregue;Mariana Costa;Beterraba;8;40.0;-0.07;40.07;Bom
+10/04/2025;Entregue;Mariana Costa;Repolho Roxo, Repolho Verde, Beterraba;15,8,8;162.5;-29.58;192.08;Bom
+11/04/2025;Parcial;Pedro Santos;Couve Manteiga;6;27.0;1.73;25.27;Bom
+11/04/2025;Entregue;Mariana Costa;Repolho Roxo, Repolho Verde, Rabanete;17,14,19;239.5;0.0;239.5;Regular
+14/04/2025;Entregue;Lucas Ferreira;Brócolis Ninja, Agrião;11,20;151.5;-15.14;166.64;Regular
+16/04/2025;Entregue;Carlos Lima;Brócolis Ninja, Repolho Verde;6,11;94.0;-10.63;104.63;Ruim
+18/04/2025;Entregue;Ana Oliveira;Cebolinha, Salsa;5,16;63.0;0.0;63.0;Ruim
+21/04/2025;Entregue;Fernanda Rocha;Salsa, Couve Manteiga, Couve Tronchuda;8,15,12;145.5;-9.76;155.26;Regular
+22/04/2025;Entregue;Maria Souza;Mostarda (folha), Escarola, Chicória;19,12,9;175.5;-12.3;187.8;Bom
+24/04/2025;Parcial;Lucas Ferreira;Agrião, Brócolis Ninja, Rúcula, Couve-flor;13,15,16,7;278.5;13.01;265.49;Bom
+24/04/2025;Entregue;Maria Souza;Almeirão, Espinafre;14,20;156.0;0.0;156.0;Regular
+25/04/2025;Entregue;Maria Souza;Espinafre, Escarola, Acelga;11,18,12;202.0;0.0;202.0;Bom
+27/04/2025;Entregue;João Pereira;Agrião, Couve Manteiga;9,20;126.0;0.0;126.0;Bom
+29/04/2025;Entregue;Maria Souza;Mostarda (folha), Acelga, Escarola, Espinafre;20,10,17,20;321.5;0.0;321.5;Bom
+02/05/2025;Entregue;Carlos Lima;Couve-flor, Repolho Verde, Repolho Roxo, Brócolis Ninja;17,19,16,9;360.5;-25.51;386.01;Bom
+04/05/2025;Entregue;Carlos Lima;Brócolis Ninja, Repolho Roxo, Couve-flor, Repolho Verde;11,15,11,12;291.0;0.0;291.0;Bom
+04/05/2025;Entregue;Mariana Costa;Repolho Roxo;10;55.0;0.0;55.0;Bom
+07/05/2025;Entregue;Lucas Ferreira;Rúcula, Couve-flor, Agrião;5,13,12;164.0;-6.15;170.15;Bom
+10/05/2025;Entregue;Pedro Santos;Alface Lisa, Alface Crespa;13,20;132.0;0.0;132.0;Regular
+12/05/2025;Entregue;Lucas Ferreira;Brócolis Ninja;20;130.0;0.0;130.0;Bom
+12/05/2025;Parcial;Fernanda Rocha;Alface Americana;18;72.0;2.81;69.19;Bom
+13/05/2025;Parcial;Lucas Ferreira;Brócolis Ninja, Rúcula, Agrião;5,9,9;113.5;7.72;105.78;Bom
+14/05/2025;Entregue;Lucas Ferreira;Brócolis Ninja, Couve-flor, Agrião, Rúcula;18,16,17,12;357.0;-11.0;368.0;Bom
+14/05/2025;Entregue;Fernanda Rocha;Couve Manteiga, Couve Tronchuda, Salsa;17,19,13;201.0;0.0;201.0;Regular
+15/05/2025;Entregue;Lucas Ferreira;Brócolis Ninja, Couve-flor;14,18;217.0;0.0;217.0;Bom
+18/05/2025;Parcial;Ana Oliveira;Salsa, Cebolinha;16,20;108.0;9.15;98.85;Bom
+21/05/2025;Entregue;Rafael Almeida;Chicória;19;76.0;0.0;76.0;Bom
+23/05/2025;Parcial;João Pereira;Agrião, Alface Americana, Alface Lisa, Couve Tronchuda;5,6,20,7;155.5;11.98;143.52;Bom
+24/05/2025;Entregue;Pedro Santos;Alface Lisa, Couve Manteiga;16,16;136.0;-26.34;162.34;Bom
+29/05/2025;Parcial;Pedro Santos;Alface Americana, Alface Lisa;11,19;120.0;7.94;112.06;Bom
+05/06/2025;Entregue;Pedro Santos;Alface Lisa, Alface Crespa;13,18;124.0;-22.63;146.63;Bom
+07/06/2025;Entregue;Ana Oliveira;Salsa, Cebolinha;12,6;54.0;0.0;54.0;Bom
+10/06/2025;Parcial;Maria Souza;Escarola, Mostarda (folha), Espinafre, Almeirão;9,19,9,7;199.0;10.99;188.01;Bom
+13/06/2025;Entregue;Maria Souza;Acelga;16;88.0;0.0;88.0;Regular
+14/06/2025;Entregue;Pedro Santos;Alface Americana, Couve Tronchuda, Alface Lisa, Alface Crespa;13,12,13,6;182.0;0.0;182.0;Bom
+15/06/2025;Parcial;Lucas Ferreira;Couve-flor, Brócolis Ninja, Agrião, Rúcula;12,17,20,10;324.5;25.48;299.02;Bom
+15/06/2025;Entregue;Pedro Santos;Couve Tronchuda;14;63.0;0.0;63.0;Bom
+16/06/2025;Parcial;Rafael Almeida;Cebolinha, Chicória;19,20;137.0;9.78;127.22;Regular
+16/06/2025;Entregue;Lucas Ferreira;Couve-flor, Agrião, Rúcula, Brócolis Ninja;14,13,10,13;284.5;0.0;284.5;Bom
+17/06/2025;Entregue;Carlos Lima;Repolho Verde, Brócolis Ninja, Couve-flor;11,11,16;238.5;0.0;238.5;Bom
+21/06/2025;Entregue;Maria Souza;Almeirão, Chicória, Acelga;6,11,14;145.0;0.0;145.0;Regular
+21/06/2025;Entregue;Mariana Costa;Beterraba, Almeirão;17,8;117.0;0.0;117.0;Bom
+22/06/2025;Entregue;Carlos Lima;Couve-flor, Repolho Verde;11,15;152.0;-18.63;170.63;Ruim
+23/06/2025;Entregue;Fernanda Rocha;Salsa, Alface Roxa, Couve Tronchuda, Alface Americana;13,19,13,18;245.5;0.0;245.5;Ruim
+23/06/2025;Entregue;João Pereira;Rúcula, Alface Crespa, Couve Manteiga;16,15,5;162.5;0.0;162.5;Bom
+24/06/2025;Entregue;Ana Oliveira;Cebolinha;9;27.0;0.0;27.0;Ruim
+25/06/2025;Entregue;Fernanda Rocha;Salsa, Alface Americana;8,13;76.0;-12.36;88.36;Bom
+25/06/2025;Parcial;Pedro Santos;Alface Roxa, Alface Crespa;9,16;100.0;6.35;93.65;Ruim
+27/06/2025;Entregue;Lucas Ferreira;Rúcula, Couve-flor;11,17;174.0;0.0;174.0;Bom
+27/06/2025;Entregue;Ana Oliveira;Salsa, Cebolinha;7,13;60.0;0.0;60.0;Regular
+29/06/2025;Entregue;Fernanda Rocha;Alface Lisa, Couve Manteiga, Alface Roxa, Alface Americana;18,8,14,12;212.0;0.0;212.0;Regular
+29/06/2025;Entregue;Maria Souza;Chicória;18;72.0;0.0;72.0;Ruim
+30/06/2025;Parcial;Maria Souza;Chicória, Espinafre;13,11;107.0;7.31;99.69;Bom
+02/07/2025;Entregue;Carlos Lima;Repolho Roxo, Repolho Verde, Couve-flor;6,6,7;112.0;0.0;112.0;Bom
+02/07/2025;Parcial;Fernanda Rocha;Alface Americana, Couve Tronchuda, Alface Crespa;8,7,16;127.5;12.58;114.92;Regular
+07/07/2025;Entregue;João Pereira;Alface Americana, Agrião, Alface Lisa;8,10,7;100.0;0.0;100.0;Bom
+07/07/2025;Parcial;Pedro Santos;Alface Americana;7;28.0;0.39;27.61;Bom
+08/07/2025;Entregue;Fernanda Rocha;Alface Americana, Couve Tronchuda;20,19;165.5;0.0;165.5;Bom
+09/07/2025;Entregue;Pedro Santos;Alface Lisa;19;76.0;-10.63;86.63;Bom
+09/07/2025;Parcial;Pedro Santos;Alface Roxa, Alface Americana;8,20;112.0;9.95;102.05;Bom
+09/07/2025;Entregue;Rafael Almeida;Chicória;8;32.0;0.0;32.0;Bom
+10/07/2025;Entregue;Maria Souza;Mostarda (folha), Almeirão, Escarola;18,17,11;198.5;-38.39;236.89;Bom
+13/07/2025;Parcial;Pedro Santos;Alface Roxa, Alface Americana, Alface Crespa;9,12,9;120.0;8.47;111.53;Bom
+14/07/2025;Entregue;Lucas Ferreira;Rúcula, Brócolis Ninja;20,18;217.0;-7.12;224.12;Bom
+14/07/2025;Entregue;Mariana Costa;Repolho Roxo, Beterraba;18,14;169.0;0.0;169.0;Bom
+14/07/2025;Entregue;Fernanda Rocha;Couve Tronchuda;7;31.5;0.0;31.5;Bom
+15/07/2025;Entregue;Rafael Almeida;Alho-poró, Chicória, Cebolinha;14,16,8;172.0;0.0;172.0;Bom
+16/07/2025;Entregue;Ana Oliveira;Cebolinha, Salsa;5,16;63.0;0.0;63.0;Bom
+17/07/2025;Entregue;Mariana Costa;Rabanete, Repolho Verde, Beterraba, Almeirão;6,11,6,7;137.0;0.0;137.0;Regular
+17/07/2025;Entregue;Ana Oliveira;Salsa;11;33.0;-2.18;35.18;Ruim
+19/07/2025;Entregue;Mariana Costa;Rabanete, Repolho Verde, Beterraba;5,10,18;160.0;-3.59;163.59;Regular
+20/07/2025;Entregue;Ana Oliveira;Salsa, Cebolinha;19,19;114.0;0.0;114.0;Bom
+20/07/2025;Entregue;Rafael Almeida;Chicória, Cebolinha, Alho-poró;12,7,8;117.0;-22.59;139.59;Regular
+23/07/2025;Entregue;João Pereira;Couve Tronchuda, Rúcula, Couve Manteiga;5,7,10;102.5;0.0;102.5;Bom
+24/07/2025;Entregue;Fernanda Rocha;Alface Roxa, Couve Tronchuda, Salsa;19,14,14;181.0;-32.22;213.22;Regular
+27/07/2025;Parcial;Rafael Almeida;Chicória, Cebolinha, Alho-poró;9,11,15;159.0;6.45;152.55;Bom
+29/07/2025;Parcial;Fernanda Rocha;Alface Lisa, Couve Manteiga;13,9;92.5;5.6;86.9;Ruim
+31/07/2025;Entregue;Lucas Ferreira;Brócolis Ninja, Couve-flor;18,17;236.0;0.0;236.0;Bom
+01/08/2025;Entregue;Pedro Santos;Alface Crespa, Couve Tronchuda, Alface Lisa;5,6,13;99.0;0.0;99.0;Bom
+02/08/2025;Entregue;Maria Souza;Acelga, Escarola, Mostarda (folha);6,9,12;127.5;0.0;127.5;Bom
+02/08/2025;Parcial;João Pereira;Alface Crespa, Couve Manteiga;17,19;153.5;10.49;143.01;Regular
+03/08/2025;Entregue;João Pereira;Alface Americana, Alface Roxa, Couve Tronchuda, Alface Lisa;11,6,5,7;118.5;0.0;118.5;Regular
+04/08/2025;Entregue;Carlos Lima;Repolho Roxo;9;49.5;0.0;49.5;Bom
+05/08/2025;Entregue;Carlos Lima;Brócolis Ninja, Repolho Verde;10,15;140.0;0.0;140.0;Bom
+05/08/2025;Parcial;Ana Oliveira;Cebolinha, Salsa;6,13;57.0;2.59;54.41;Bom
+05/08/2025;Entregue;Maria Souza;Mostarda (folha), Escarola;12,10;99.0;-9.52;108.52;Bom
+05/08/2025;Entregue;Fernanda Rocha;Alface Roxa, Couve Tronchuda;19,8;112.0;0.0;112.0;Regular
+05/08/2025;Entregue;Carlos Lima;Couve-flor, Brócolis Ninja, Repolho Verde, Repolho Roxo;11,5,19,19;309.0;0.0;309.0;Bom
+06/08/2025;Entregue;João Pereira;Couve Tronchuda;15;67.5;-0.17;67.67;Bom
+06/08/2025;Entregue;Carlos Lima;Couve-flor, Brócolis Ninja;13,16;195.0;0.0;195.0;Bom
+06/08/2025;Entregue;Rafael Almeida;Chicória, Alho-poró;19,16;172.0;0.0;172.0;Bom
+07/08/2025;Entregue;Fernanda Rocha;Couve Manteiga, Alface Crespa, Alface Lisa;6,20,10;147.0;0.0;147.0;Bom
+10/08/2025;Entregue;Fernanda Rocha;Alface Lisa, Alface Americana, Alface Roxa;9,16,17;168.0;0.0;168.0;Bom
+13/08/2025;Entregue;Pedro Santos;Couve Tronchuda;10;45.0;-2.39;47.39;Bom
+15/08/2025;Entregue;Rafael Almeida;Alho-poró, Chicória;14,7;112.0;0.0;112.0;Bom
+17/08/2025;Entregue;Mariana Costa;Repolho Roxo, Repolho Verde;14,10;127.0;0.0;127.0;Ruim
+18/08/2025;Entregue;Maria Souza;Acelga, Mostarda (folha), Escarola;6,10,11;127.5;0.0;127.5;Bom
+19/08/2025;Parcial;Carlos Lima;Brócolis Ninja, Couve-flor, Repolho Roxo, Repolho Verde;5,16,13,6;246.0;10.81;235.19;Bom
+19/08/2025;Entregue;Ana Oliveira;Salsa;12;36.0;0.0;36.0;Bom
+20/08/2025;Parcial;João Pereira;Rúcula, Alface Roxa, Alface Lisa;6,16,13;146.0;8.83;137.17;Regular
+20/08/2025;Parcial;Ana Oliveira;Salsa, Cebolinha;8,16;72.0;0.19;71.81;Ruim
+20/08/2025;Entregue;Carlos Lima;Brócolis Ninja, Repolho Roxo, Couve-flor, Repolho Verde;11,8,18,10;291.5;0.0;291.5;Bom
+23/08/2025;Entregue;Maria Souza;Espinafre, Acelga, Almeirão;12,6,18;165.0;0.0;165.0;Bom
+24/08/2025;Entregue;João Pereira;Rúcula, Alface Crespa, Couve Manteiga;19,16,14;222.0;-3.1;225.1;Bom
+25/08/2025;Entregue;Ana Oliveira;Salsa, Cebolinha;16,8;72.0;0.0;72.0;Ruim
+25/08/2025;Entregue;Maria Souza;Mostarda (folha);18;81.0;-13.68;94.68;Bom
+26/08/2025;Parcial;João Pereira;Agrião, Alface Roxa, Alface Americana;19,8,10;148.0;7.37;140.63;Bom
+27/08/2025;Parcial;Fernanda Rocha;Salsa, Alface Crespa;12,15;96.0;8.87;87.13;Regular
+27/08/2025;Parcial;Carlos Lima;Brócolis Ninja, Repolho Verde, Couve-flor, Repolho Roxo;11,11,6,11;229.0;9.64;219.36;Bom
+28/08/2025;Entregue;Maria Souza;Escarola, Espinafre, Almeirão, Chicória;17,10,11,7;198.5;0.0;198.5;Ruim
+28/08/2025;Parcial;Lucas Ferreira;Couve-flor, Agrião, Rúcula, Brócolis Ninja;18,6,13,5;247.5;17.67;229.83;Bom
+30/08/2025;Entregue;Carlos Lima;Repolho Roxo, Couve-flor;19,10;174.5;0.0;174.5;Bom
+30/08/2025;Parcial;João Pereira;Couve Tronchuda;5;22.5;0.43;22.07;Bom
+31/08/2025;Entregue;Maria Souza;Escarola, Chicória, Almeirão, Espinafre;10,15,6,8;169.0;-26.02;195.02;Bom
+01/09/2025;Entregue;Maria Souza;Mostarda (folha), Espinafre, Almeirão, Escarola;20,16,6,20;284.0;3.38;280.62;Bom
+01/09/2025;Entregue;Lucas Ferreira;Couve-flor, Brócolis Ninja, Agrião, Rúcula;13,6,15,16;270.0;-22.4;292.4;Bom
+02/09/2025;Parcial;Pedro Santos;Alface Lisa, Alface Americana;7,5;48.0;3.8;44.2;Bom
+02/09/2025;Entregue;Carlos Lima;Repolho Verde, Repolho Roxo, Couve-flor;6,9,8;135.5;0.25;135.25;Bom
+03/09/2025;Entregue;Maria Souza;Mostarda (folha), Espinafre, Almeirão, Acelga;15,17,5,6;205.5;0.0;205.5;Bom
+03/09/2025;Parcial;Carlos Lima;Repolho Verde, Repolho Roxo;15,16;163.0;11.54;151.46;Bom
+03/09/2025;Parcial;Maria Souza;Escarola;10;45.0;0.46;44.54;Regular
+04/09/2025;Parcial;Ana Oliveira;Salsa, Cebolinha;15,17;96.0;2.78;93.22;Bom
+05/09/2025;Entregue;Fernanda Rocha;Alface Americana, Salsa, Alface Lisa;11,18,19;174.0;0.0;174.0;Bom
+09/09/2025;Entregue;Ana Oliveira;Salsa, Cebolinha;9,5;42.0;0.0;42.0;Bom
+12/09/2025;Entregue;Maria Souza;Escarola, Acelga;8,6;69.0;0.0;69.0;Regular
+12/09/2025;Parcial;João Pereira;Alface Lisa, Alface Crespa, Couve Tronchuda, Alface Roxa;14,5,8,20;192.0;18.22;173.78;Bom
+17/09/2025;Entregue;Rafael Almeida;Alho-poró, Cebolinha, Chicória;13,19,15;195.0;-4.21;199.21;Regular
+18/09/2025;Entregue;Pedro Santos;Couve Manteiga;20;90.0;0.0;90.0;Bom
+19/09/2025;Entregue;Mariana Costa;Repolho Roxo, Almeirão, Beterraba, Rabanete;10,16,11,19;250.0;0.0;250.0;Bom
+19/09/2025;Entregue;Ana Oliveira;Salsa;19;57.0;0.0;57.0;Ruim
+20/09/2025;Entregue;Pedro Santos;Couve Tronchuda, Alface Americana, Espinafre, Alface Crespa;14,17,12,5;211.0;-27.73;238.73;Ruim
+20/09/2025;Entregue;Lucas Ferreira;Rúcula, Agrião;12,15;120.0;0.0;120.0;Regular
+21/09/2025;Entregue;Mariana Costa;Rabanete, Repolho Verde;11,10;94.0;0.0;94.0;Bom
+21/09/2025;Entregue;Lucas Ferreira;Rúcula, Agrião;8,18;112.0;0.0;112.0;Regular
+21/09/2025;Entregue;Maria Souza;Espinafre;12;60.0;-4.63;64.63;Regular
+22/09/2025;Entregue;Lucas Ferreira;Brócolis Ninja, Agrião;20,16;194.0;-9.35;203.35;Bom
+24/09/2025;Entregue;Maria Souza;Almeirão, Acelga, Escarola;12,17,12;195.5;0.0;195.5;Ruim
+25/09/2025;Entregue;Rafael Almeida;Cebolinha, Chicória;13,10;79.0;-14.16;93.16;Bom
+25/09/2025;Parcial;Lucas Ferreira;Agrião, Couve-flor;17,13;159.0;7.42;151.58;Ruim
+25/09/2025;Entregue;Fernanda Rocha;Alface Roxa;6;24.0;-2.96;26.96;Bom
+26/09/2025;Entregue;Pedro Santos;Espinafre, Couve Manteiga, Alface Lisa;9,10,11;134.0;0.0;134.0;Bom
+01/10/2025;Entregue;Pedro Santos;Alface Lisa, Espinafre, Alface Crespa, Couve Tronchuda;11,11,10,20;229.0;0.0;229.0;Bom
+02/10/2025;Parcial;Rafael Almeida;Cebolinha, Alho-poró;19,11;123.0;7.39;115.61;Ruim
+02/10/2025;Parcial;Maria Souza;Mostarda (folha);14;63.0;5.8;57.2;Regular
+03/10/2025;Entregue;Rafael Almeida;Alho-poró;16;96.0;0.0;96.0;Bom
+03/10/2025;Parcial;Carlos Lima;Repolho Verde;9;45.0;2.22;42.78;Bom
+04/10/2025;Parcial;João Pereira;Alface Crespa, Agrião, Alface Americana;17,14,16;188.0;17.28;170.72;Bom
+04/10/2025;Entregue;Mariana Costa;Repolho Verde, Rabanete, Almeirão;11,19,7;159.0;-22.95;181.95;Bom
+07/10/2025;Entregue;Fernanda Rocha;Alface Americana, Alface Crespa, Couve Manteiga;5,18,12;146.0;0.0;146.0;Regular
+07/10/2025;Parcial;João Pereira;Rúcula;6;30.0;0.0;30.0;Bom
+08/10/2025;Entregue;Lucas Ferreira;Brócolis Ninja, Couve-flor, Agrião, Rúcula;5,9,7,9;168.5;0.0;168.5;Ruim
+11/10/2025;Entregue;Pedro Santos;Alface Crespa, Alface Lisa, Couve Manteiga;20,16,10;189.0;0.0;189.0;Regular
+13/10/2025;Entregue;Maria Souza;Chicória, Mostarda (folha), Escarola;5,19,10;150.5;0.0;150.5;Bom
+14/10/2025;Entregue;João Pereira;Couve Manteiga;15;67.5;0.0;67.5;Regular
+15/10/2025;Entregue;Rafael Almeida;Alho-poró;19;114.0;0.0;114.0;Bom
+15/10/2025;Entregue;Ana Oliveira;Salsa;18;54.0;0.0;54.0;Regular
+15/10/2025;Parcial;Maria Souza;Espinafre, Chicória;17,6;109.0;6.35;102.65;Bom
+15/10/2025;Entregue;Fernanda Rocha;Salsa, Alface Americana, Alface Lisa, Couve Tronchuda;17,10,19,11;216.5;0.0;216.5;Bom
+16/10/2025;Entregue;Carlos Lima;Repolho Verde, Couve-flor;7,7;84.0;0.0;84.0;Bom
+16/10/2025;Entregue;Mariana Costa;Almeirão;18;72.0;0.0;72.0;Bom
+16/10/2025;Entregue;Fernanda Rocha;Salsa, Couve Tronchuda;19,14;120.0;0.0;120.0;Bom
+21/10/2025;Entregue;Lucas Ferreira;Rúcula, Brócolis Ninja;7,8;87.0;0.0;87.0;Regular
+22/10/2025;Parcial;Ana Oliveira;Cebolinha, Salsa;16,8;72.0;6.8;65.2;Regular
+25/10/2025;Parcial;Maria Souza;Acelga, Mostarda (folha), Escarola, Espinafre;12,12,7,5;176.5;16.29;160.21;Bom
+26/10/2025;Entregue;Lucas Ferreira;Rúcula, Brócolis Ninja, Agrião, Couve-flor;8,14,14,16;299.0;0.0;299.0;Regular
+28/10/2025;Entregue;Lucas Ferreira;Brócolis Ninja, Rúcula, Agrião;7,13,6;134.5;0.0;134.5;Bom
+30/10/2025;Parcial;Ana Oliveira;Salsa;11;33.0;2.05;30.95;Regular
+30/10/2025;Parcial;Maria Souza;Escarola;5;22.5;1.92;20.58;Regular
+31/10/2025;Entregue;Maria Souza;Escarola, Almeirão;9,6;64.5;-10.35;74.85;Bom
+01/11/2025;Entregue;Mariana Costa;Repolho Roxo, Repolho Verde;19,6;134.5;0.0;134.5;Regular
+02/11/2025;Entregue;Carlos Lima;Couve-flor;16;112.0;2.46;109.54;Bom
+02/11/2025;Entregue;Ana Oliveira;Cebolinha;15;45.0;0.0;45.0;Bom
+03/11/2025;Entregue;Lucas Ferreira;Rúcula, Agrião, Brócolis Ninja;7,11,12;157.0;0.0;157.0;Regular
+06/11/2025;Entregue;Rafael Almeida;Alho-poró;8;48.0;0.0;48.0;Regular
+06/11/2025;Entregue;Fernanda Rocha;Alface Roxa, Couve Tronchuda, Salsa, Alface Lisa;16,15,13,8;202.5;0.0;202.5;Bom
+06/11/2025;Parcial;Lucas Ferreira;Agrião;12;48.0;2.68;45.32;Regular
+08/11/2025;Entregue;Pedro Santos;Espinafre, Alface Lisa, Alface Americana;9,16,9;145.0;-21.87;166.87;Ruim
+09/11/2025;Entregue;Fernanda Rocha;Alface Americana, Couve Manteiga;15,19;145.5;-1.55;147.05;Bom
+09/11/2025;Entregue;Fernanda Rocha;Alface Roxa, Couve Manteiga, Alface Crespa;17,20,6;182.0;-30.41;212.41;Ruim
+18/11/2025;Parcial;Fernanda Rocha;Alface Crespa, Alface Americana, Couve Manteiga, Salsa;13,18,14,6;205.0;9.68;195.32;Bom
+19/11/2025;Entregue;Pedro Santos;Alface Americana, Espinafre, Alface Crespa;7,9,5;93.0;0.0;93.0;Bom
+20/11/2025;Entregue;João Pereira;Alface Lisa, Couve Manteiga, Alface Crespa, Agrião;15,10,8,15;197.0;0.0;197.0;Bom
+20/11/2025;Entregue;Mariana Costa;Almeirão;17;68.0;-5.4;73.4;Bom
+21/11/2025;Parcial;Lucas Ferreira;Agrião, Rúcula;13,13;117.0;4.18;112.82;Regular
+23/11/2025;Parcial;Lucas Ferreira;Rúcula, Couve-flor;13,6;107.0;9.45;97.55;Bom
+24/11/2025;Parcial;Pedro Santos;Espinafre;5;25.0;1.65;23.35;Bom
+26/11/2025;Entregue;Pedro Santos;Alface Roxa, Espinafre, Couve Manteiga;13,9,16;169.0;0.0;169.0;Bom
+27/11/2025;Entregue;Mariana Costa;Rabanete;12;48.0;0.0;48.0;Regular
+28/11/2025;Entregue;Ana Oliveira;Cebolinha, Salsa;20,9;87.0;0.0;87.0;Bom
+29/11/2025;Entregue;Rafael Almeida;Cebolinha, Alho-poró;7,9;75.0;0.0;75.0;Regular
+29/11/2025;Entregue;Maria Souza;Chicória;11;44.0;0.0;44.0;Bom
+04/12/2025;Entregue;Fernanda Rocha;Alface Roxa, Alface Lisa;7,19;104.0;0.0;104.0;Regular
+05/12/2025;Parcial;Ana Oliveira;Cebolinha;7;21.0;0.59;20.41;Bom
+05/12/2025;Parcial;Maria Souza;Acelga, Almeirão, Espinafre;14,19,13;218.0;14.81;203.19;Bom
+11/12/2025;Entregue;João Pereira;Agrião, Alface Lisa;19,16;140.0;0.0;140.0;Bom
+12/12/2025;Entregue;Carlos Lima;Brócolis Ninja, Repolho Verde;16,10;154.0;0.0;154.0;Bom
+13/12/2025;Entregue;Fernanda Rocha;Couve Manteiga;20;90.0;-5.07;95.07;Bom
+13/12/2025;Parcial;Ana Oliveira;Salsa;16;48.0;0.38;47.62;Bom
+13/12/2025;Parcial;Rafael Almeida;Chicória, Alho-poró;16,20;184.0;4.26;179.74;Bom
+15/12/2025;Entregue;Mariana Costa;Rabanete, Almeirão;7,8;60.0;-7.44;67.44;Bom
+15/12/2025;Entregue;Pedro Santos;Espinafre, Alface Americana, Couve Tronchuda, Couve Manteiga;8,16,16,7;207.5;0.0;207.5;Bom
+16/12/2025;Entregue;Maria Souza;Escarola, Chicória, Acelga, Mostarda (folha);10,10,12,19;236.5;0.0;236.5;Regular
+17/12/2025;Entregue;Carlos Lima;Brócolis Ninja, Repolho Verde, Repolho Roxo, Couve-flor;18,19,11,11;349.5;0.0;349.5;Regular
+18/12/2025;Entregue;Carlos Lima;Couve-flor;15;105.0;0.0;105.0;Bom
+18/12/2025;Entregue;Fernanda Rocha;Couve Manteiga, Alface Americana, Alface Roxa;9,5,18;132.5;-10.08;142.58;Ruim
+21/12/2025;Parcial;Mariana Costa;Almeirão, Repolho Roxo, Repolho Verde;9,19,8;180.5;7.48;173.02;Bom
+21/12/2025;Entregue;Maria Souza;Espinafre, Mostarda (folha), Almeirão;19,19,10;220.5;0.0;220.5;Bom
+27/12/2025;Entregue;Mariana Costa;Beterraba, Rabanete, Repolho Verde;12,13,18;202.0;-12.38;214.38;Bom
+28/12/2025;Parcial;João Pereira;Couve Tronchuda;10;45.0;2.99;42.01;Bom
+03/01/2026;Parcial;Carlos Lima;Couve-flor, Brócolis Ninja;16,13;196.5;17.97;178.53;Ruim
+03/01/2026;Entregue;Fernanda Rocha;Couve Tronchuda;6;27.0;-3.57;30.57;Bom
+03/01/2026;Entregue;Maria Souza;Almeirão;11;44.0;0.0;44.0;Bom
+05/01/2026;Entregue;Maria Souza;Espinafre, Almeirão, Escarola;15,17,8;179.0;0.0;179.0;Bom
+06/01/2026;Entregue;Carlos Lima;Brócolis Ninja, Repolho Verde, Couve-flor, Repolho Roxo;7,5,6,19;217.0;0.0;217.0;Bom
+07/01/2026;Entregue;Carlos Lima;Repolho Verde, Couve-flor;11,10;125.0;0.0;125.0;Ruim
+07/01/2026;Entregue;Carlos Lima;Couve-flor, Brócolis Ninja, Repolho Verde, Repolho Roxo;11,18,14,17;357.5;0.0;357.5;Regular
+09/01/2026;Entregue;Fernanda Rocha;Alface Crespa, Salsa, Alface Americana;5,14,20;142.0;0.0;142.0;Bom
+10/01/2026;Entregue;Mariana Costa;Almeirão, Beterraba, Repolho Verde, Repolho Roxo;11,16,6,13;225.5;-8.63;234.13;Bom
+10/01/2026;Entregue;Rafael Almeida;Chicória;10;40.0;0.0;40.0;Bom
+11/01/2026;Parcial;João Pereira;Agrião, Alface Roxa, Alface Lisa, Couve Tronchuda;14,8,15,8;184.0;4.8;179.2;Bom
+11/01/2026;Entregue;Carlos Lima;Repolho Roxo, Couve-flor;9,7;98.5;-11.39;109.89;Regular
+11/01/2026;Entregue;Lucas Ferreira;Rúcula;8;40.0;0.91;39.09;Bom
+13/01/2026;Entregue;Mariana Costa;Rabanete, Repolho Verde, Beterraba, Repolho Roxo;15,8,18,17;283.5;0.0;283.5;Bom
+14/01/2026;Entregue;Lucas Ferreira;Brócolis Ninja, Rúcula, Agrião;12,16,13;210.0;0.0;210.0;Ruim
+14/01/2026;Entregue;Pedro Santos;Alface Lisa;11;44.0;0.0;44.0;Bom
+15/01/2026;Entregue;Rafael Almeida;Chicória, Alho-poró, Cebolinha;18,18,5;195.0;0.0;195.0;Bom
+16/01/2026;Entregue;Maria Souza;Almeirão, Acelga;11,6;77.0;0.0;77.0;Regular
+17/01/2026;Entregue;Carlos Lima;Repolho Roxo, Couve-flor;18,20;239.0;0.0;239.0;Regular
+18/01/2026;Entregue;Ana Oliveira;Cebolinha;17;51.0;0.0;51.0;Bom
+20/01/2026;Entregue;João Pereira;Couve Tronchuda, Couve Manteiga, Alface Americana;7,17,12;156.0;4.6;151.4;Bom
+20/01/2026;Entregue;Pedro Santos;Alface Lisa;18;72.0;-5.01;77.01;Bom
+20/01/2026;Entregue;Rafael Almeida;Chicória;6;24.0;0.0;24.0;Bom
+20/01/2026;Entregue;Carlos Lima;Couve-flor;8;56.0;-9.73;65.73;Bom
+21/01/2026;Parcial;Lucas Ferreira;Agrião;18;72.0;0.61;71.39;Bom
+21/01/2026;Entregue;Ana Oliveira;Cebolinha;18;54.0;0.0;54.0;Regular
+23/01/2026;Entregue;João Pereira;Alface Americana;18;72.0;-8.97;80.97;Ruim
+24/01/2026;Entregue;Fernanda Rocha;Couve Tronchuda, Alface Americana, Couve Manteiga, Salsa;7,10,16,9;170.5;0.0;170.5;Bom
+27/01/2026;Entregue;Rafael Almeida;Cebolinha;14;42.0;-3.01;45.01;Regular
+27/01/2026;Entregue;Rafael Almeida;Cebolinha;9;27.0;-0.97;27.97;Bom
+27/01/2026;Parcial;Fernanda Rocha;Alface Crespa;17;68.0;3.07;64.93;Ruim
+31/01/2026;Entregue;Lucas Ferreira;Couve-flor, Agrião;5,11;79.0;0.0;79.0;Bom
+02/02/2026;Entregue;Lucas Ferreira;Agrião, Brócolis Ninja;13,5;84.5;0.0;84.5;Regular
+04/02/2026;Entregue;Ana Oliveira;Salsa, Cebolinha;8,13;63.0;1.27;61.73;Ruim
+05/02/2026;Entregue;Ana Oliveira;Salsa;8;24.0;0.0;24.0;Bom
+06/02/2026;Entregue;Lucas Ferreira;Agrião, Brócolis Ninja;11,19;167.5;0.0;167.5;Bom
+08/02/2026;Entregue;Lucas Ferreira;Agrião, Rúcula, Brócolis Ninja, Couve-flor;12,20,15,8;301.5;0.0;301.5;Bom
+08/02/2026;Entregue;Mariana Costa;Almeirão;9;36.0;0.0;36.0;Bom
+12/02/2026;Entregue;Rafael Almeida;Chicória, Cebolinha, Alho-poró;12,12,10;144.0;0.0;144.0;Bom
+12/02/2026;Entregue;Carlos Lima;Repolho Roxo;11;60.5;0.0;60.5;Bom
+16/02/2026;Entregue;Lucas Ferreira;Agrião;18;72.0;0.0;72.0;Bom
+17/02/2026;Entregue;Mariana Costa;Repolho Verde, Beterraba, Almeirão;15,8,10;155.0;0.0;155.0;Bom
+17/02/2026;Entregue;Maria Souza;Escarola, Chicória, Almeirão;5,13,10;114.5;-9.25;123.75;Bom
+19/02/2026;Parcial;Mariana Costa;Beterraba, Repolho Roxo, Almeirão;19,13,6;190.5;17.34;173.16;Regular
+20/02/2026;Entregue;Rafael Almeida;Cebolinha, Chicória;16,5;68.0;2.17;65.83;Bom
+24/02/2026;Parcial;Maria Souza;Almeirão, Chicória, Espinafre;12,7,18;166.0;12.16;153.84;Regular
+24/02/2026;Entregue;Lucas Ferreira;Brócolis Ninja, Agrião;19,15;183.5;0.0;183.5;Ruim
+25/02/2026;Entregue;Carlos Lima;Couve-flor, Brócolis Ninja, Repolho Roxo;8,8,10;163.0;0.0;163.0;Bom
+25/02/2026;Entregue;Lucas Ferreira;Couve-flor;13;91.0;0.0;91.0;Bom
+26/02/2026;Entregue;Pedro Santos;Couve Tronchuda;15;67.5;0.0;67.5;Regular
