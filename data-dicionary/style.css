@@ -14,7 +14,6 @@ body {
     background-color: white;
     padding: 40px 60px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 #main-table ul {
@@ -33,10 +32,15 @@ a {
 
 fieldset {
     border-radius: 10px;
+    position: relative;
+    top: 0px;
+    transition: top 100ms;
 }
 
 fieldset:hover {
-    box-shadow: 4px 4px rgb(232, 232, 232);
+    box-shadow: 5px 5px rgb(232, 232, 232);
     background-color: rgb(241, 240, 240);
     border-style: outset;
+    position: relative;
+    top: -1.5px;
 }
