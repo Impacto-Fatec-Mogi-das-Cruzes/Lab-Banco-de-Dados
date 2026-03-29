@@ -22,18 +22,18 @@ pre {
 
 /* IMAGES */
 
-div.currentmasterreport img, div.currentchildreport img {
+div.currentmasterreport img {
     border: 0;
 }
 
 /* TABLES */
 
-div.currentmasterreport table, div.currentchildreport table {
+div.currentmasterreport table {
     border-spacing: 0px;
     empty-cells: show;
 }
 
-div.currentmasterreport table th, div.currentchildreport table th {
+div.currentmasterreport table th {
     color: #2b7c92;
     white-space: nowrap;
     padding: 2px 8px;
@@ -45,7 +45,7 @@ div.currentmasterreport table th, div.currentchildreport table th {
     text-decoration: underline;
 }
 
-div.currentmasterreport table td, div.currentchildreport table td {
+div.currentmasterreport table td {
     background: none;
     border-top: 1px #fff solid;
     border-bottom: 1px #ccc solid;

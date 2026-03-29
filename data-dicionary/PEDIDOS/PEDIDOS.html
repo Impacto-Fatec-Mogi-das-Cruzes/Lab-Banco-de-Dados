@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lan="pt-br">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="../report.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -16,16 +19,16 @@
         </table>
     </div>
     <br />
-    <div id="masterreports">
-        <div id="Master.0">
+    <div>
+        <div>
             <div class="currentmasterreport">
-                <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+                <table>
                     <tr>
                         <th>TABLE_COMMENT</th>
                         <td data-i18n="pdd_table_comment">Tabela com os pedidos</td>
                     </tr>
                 </table>
-                <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+                <table>
                     <tr>
                         <th>COLUMN_NAME</th>
                         <th>DATA_TYPE</th>
@@ -35,12 +38,12 @@
                         <th>COMMENTS</th>
                     </tr>
                     <tr>
-                        <td class="currentcell">PDD_ID</td>
-                        <td class="currentcell">NUMBER(6,0)</td>
-                        <td class="currentcell">No</td>
-                        <td class="currentcell">null</td>
-                        <td class="currentcell">1</td>
-                        <td class="currentcell" data-i18n="pdd_id_comment">Chave primária, identificador único do pedido</td>
+                        <td>PDD_ID</td>
+                        <td>NUMBER(6,0)</td>
+                        <td>No</td>
+                        <td>null</td>
+                        <td>1</td>
+                        <td data-i18n="pdd_id_comment">Chave primária, identificador único do pedido</td>
                     </tr>
                     <tr>
                         <td>PDD_DATA</td>
@@ -56,15 +59,17 @@
                         <td>No</td>
                         <td>null</td>
                         <td>3</td>
-                        <td data-i18n="pdd_stt_id_comment">Chave estrangeira referente a STATUS, status de entrega do pedido</td>
+                        <td data-i18n="pdd_stt_id_comment">Chave estrangeira referente a STATUS, status de entrega do
+                            pedido</td>
                     </tr>
-                    <tr >
+                    <tr>
                         <td>PDD_FOC_ID</td>
                         <td>NUMBER(6,0)</td>
                         <td>No</td>
                         <td>null</td>
                         <td>4</td>
-                        <td data-i18n="pdd_foc_id_comment">Chave estrangeira referente a FORNECEDORES, fornecedor dos produtos pedidos</td>
+                        <td data-i18n="pdd_foc_id_comment">Chave estrangeira referente a FORNECEDORES, fornecedor dos
+                            produtos pedidos</td>
                     </tr>
                     <tr>
                         <td>PDD_VALOR_TOTAL</td>
@@ -72,7 +77,8 @@
                         <td>No</td>
                         <td>null</td>
                         <td>5</td>
-                        <td data-i18n="pdd_valor_total_comment">Valor total do pedido, soma dos preços unitários multiplicados pelas quantidades de cada produto pedido</td>
+                        <td data-i18n="pdd_valor_total_comment">Valor total do pedido, soma dos preços unitários
+                            multiplicados pelas quantidades de cada produto pedido</td>
                     </tr>
                     <tr>
                         <td>PDD_VALOR_PAGO</td>
@@ -88,7 +94,8 @@
                         <td>Yes</td>
                         <td>null</td>
                         <td>7</td>
-                        <td data-i18n="pdd_qal_id_comment">Chave estrangeira referente a QUALIDADES, qualidade do produto</td>
+                        <td data-i18n="pdd_qal_id_comment">Chave estrangeira referente a QUALIDADES, qualidade do
+                            produto</td>
                     </tr>
                 </table>
             </div>
