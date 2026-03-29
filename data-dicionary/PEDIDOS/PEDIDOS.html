@@ -22,7 +22,7 @@
                 <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
                     <tr>
                         <th>TABLE_COMMENT</th>
-                        <td>Tabela com os pedidos</td>
+                        <td data-i18n="pdd_table_comment">Tabela com os pedidos</td>
                     </tr>
                 </table>
                 <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
@@ -34,14 +34,13 @@
                         <th>COLUMN_ID</th>
                         <th>COMMENTS</th>
                     </tr>
-                    <tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+                    <tr>
                         <td class="currentcell">PDD_ID</td>
                         <td class="currentcell">NUMBER(6,0)</td>
                         <td class="currentcell">No</td>
                         <td class="currentcell">null</td>
                         <td class="currentcell">1</td>
-                        <td class="currentcell">Chave Primária, identificador único de pedidos
-                        </td>
+                        <td class="currentcell" data-i18n="pdd_id_comment">Chave primária, identificador único do pedido</td>
                     </tr>
                     <tr>
                         <td>PDD_DATA</td>
@@ -49,7 +48,7 @@
                         <td>No</td>
                         <td>null</td>
                         <td>2</td>
-                        <td>Data em o pedido foi realizado</td>
+                        <td data-i18n="pdd_data_comment">Data em que o pedido foi realizado</td>
                     </tr>
                     <tr>
                         <td>PDD_STT_ID</td>
@@ -57,7 +56,7 @@
                         <td>No</td>
                         <td>null</td>
                         <td>3</td>
-                        <td>Chave estrangeira para STATUS, status do pedido</td>
+                        <td data-i18n="pdd_stt_id_comment">Chave estrangeira referente a STATUS, status de entrega do pedido</td>
                     </tr>
                     <tr >
                         <td>PDD_FOC_ID</td>
@@ -65,8 +64,7 @@
                         <td>No</td>
                         <td>null</td>
                         <td>4</td>
-                        <td>Chave estrangeira para FORNECEDORES, fornecedor do produto do pedido 
-                        </td>
+                        <td data-i18n="pdd_foc_id_comment">Chave estrangeira referente a FORNECEDORES, fornecedor dos produtos pedidos</td>
                     </tr>
                     <tr>
                         <td>PDD_VALOR_TOTAL</td>
@@ -74,7 +72,7 @@
                         <td>No</td>
                         <td>null</td>
                         <td>5</td>
-                        <td>Valor total do pedido</td>
+                        <td data-i18n="pdd_valor_total_comment">Valor total do pedido, soma dos preços unitários multiplicados pelas quantidades de cada produto pedido</td>
                     </tr>
                     <tr>
                         <td>PDD_VALOR_PAGO</td>
@@ -82,7 +80,7 @@
                         <td>No</td>
                         <td>null</td>
                         <td>6</td>
-                        <td>Valor pago do total do pedido</td>
+                        <td data-i18n="pdd_valor_pago_comment">Valor pago do valor total do pedido</td>
                     </tr>
                     <tr>
                         <td>PDD_QAL_ID</td>
@@ -90,12 +88,45 @@
                         <td>Yes</td>
                         <td>null</td>
                         <td>7</td>
-                        <td>Chave estrangeira para QUALIDADES, qualiade do produto</td>
+                        <td data-i18n="pdd_qal_id_comment">Chave estrangeira referente a QUALIDADES, qualidade do produto</td>
                     </tr>
                 </table>
             </div>
         </div>
     </div>
+    <div id="lang-switch">
+        <button onclick="loadLanguage('en')">
+            en
+        </button>
+        <button onclick="loadLanguage('ptbr')">
+            pt-br
+        </button>
+    </div>
+    <script src="../language.js"></script>
+    <script id="en" type="application/json">
+        {
+            "pdd_table_comment": "Table containing orders",
+            "pdd_id_comment": "Primary key, unique identifier of the order",
+            "pdd_data_comment": "Date when the order was placed",
+            "pdd_stt_id_comment": "Foreign key referencing STATUS, order delivery status",
+            "pdd_foc_id_comment": "Foreign key referencing FORNECEDORES, supplier of the ordered products",
+            "pdd_valor_total_comment": "Total order value, sum of unit prices multiplied by the quantities of each ordered product",
+            "pdd_valor_pago_comment": "Amount paid of the total order value",
+            "pdd_qal_id_comment": "Foreign key referencing QUALIDADES, product quality"
+        }
+    </script>
+    <script id="ptbr" type="application/json">
+        {
+            "pdd_table_comment": "Tabela com os pedidos",
+            "pdd_id_comment": "Chave primária, identificador único do pedido",
+            "pdd_data_comment": "Data em que o pedido foi realizado",
+            "pdd_stt_id_comment": "Chave estrangeira referente a STATUS, status de entrega do pedido",
+            "pdd_foc_id_comment": "Chave estrangeira referente a FORNECEDORES, fornecedor dos produtos pedidos",
+            "pdd_valor_total_comment": "Valor total do pedido, soma dos preços unitários multiplicados pelas quantidades de cada produto pedido",
+            "pdd_valor_pago_comment": "Valor pago do valor total do pedido",
+            "pdd_qal_id_comment": "Chave estrangeira referente a QUALIDADES, qualidade do produto" 
+        }
+    </script>
 </body>
 
 </html>

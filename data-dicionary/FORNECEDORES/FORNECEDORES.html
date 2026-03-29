@@ -22,7 +22,7 @@
                 <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
                     <tr>
                         <th>TABLE_COMMENT</th>
-                        <td>Tabela com os fornecedores dos produtos</td>
+                        <td data-i18n="foc_table_comment">Tabela com os fornecedores dos produtos</td>
                     </tr>
                 </table>
                 <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
@@ -40,8 +40,7 @@
                         <td class="currentcell">No</td>
                         <td class="currentcell">null</td>
                         <td class="currentcell">1</td>
-                        <td class="currentcell" data-i18n="foc_id_comment">
-                            Chave Primária, identificador único do produto</td>
+                        <td class="currentcell" data-i18n="foc_id_comment">Chave Primária, identificador único do fornecedor</td>
                     </tr>
                     <tr>
                         <td>FOC_NOME</td>
@@ -49,7 +48,7 @@
                         <td>No</td>
                         <td>null</td>
                         <td>2</td>
-                        <td>Nome do Fornecedor</td>
+                        <td data-i18n="foc_nome_comment">Nome do Fornecedor</td>
                     </tr>
                     <tr>
                         <td>FOC_DIFERENCA</td>
@@ -57,13 +56,37 @@
                         <td>No</td>
                         <td>0&nbsp;</td>
                         <td>3</td>
-                        <td>Valor que foi pago a mais(negativo) ou a menos(positivo) na hora hora de pagamento de um pedido
-                        </td>
+                        <td data-i18n="foc_diferenca_comment">Indica o saldo financeiro com o fornecedor: valores positivos representam débitos a pagar, enquanto valores negativos indicam pagamentos excedentes, que devem ser abatidos em pedidos futuros</td>
                     </tr>
                 </table>
             </div>
         </div>
+        <div id="lang-switch">
+            <button onclick="loadLanguage('en')">
+                en
+            </button>
+            <button onclick="loadLanguage('ptbr')">
+                pt-br
+            </button>
+        </div>
     </div>
+    <script src="../language.js"></script>
+    <script id="en" type="application/json">
+        {
+            "foc_table_comment": "Table containing product suppliers",
+            "foc_id_comment": "Primary key, unique identifier of the supplier",
+            "foc_nome_comment": "Supplier name",
+            "foc_diferenca_comment": "Indicates the financial balance with the supplier: positive values represent amounts payable, while negative values indicate overpayments that must be deducted from future orders"
+        }
+    </script>
+    <script id="ptbr" type="application/json">
+        {
+            "foc_table_comment": "Tabela com os fornecedores dos produtos",
+            "foc_id_comment": "Chave Primária, identificador único do fornecedor",
+            "foc_nome_comment": "Nome do Fornecedor",
+            "foc_diferenca_comment": "Indica o saldo financeiro com o fornecedor: valores positivos representam débitos a pagar, enquanto valores negativos indicam pagamentos excedentes, que devem ser abatidos em pedidos futuros"
+        }
+    </script>
 </body>
 
 </html>

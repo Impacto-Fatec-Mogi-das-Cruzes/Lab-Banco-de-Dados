@@ -22,7 +22,7 @@
                 <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
                     <tr>
                         <th>TABLE_COMMENT</th>
-                        <td>Tabela de junção entre pedidos e produtos</td>
+                        <td data-i18n="pdd_table_comment">Tabela de junção entre pedidos e produtos</td>
                     </tr>
                 </table>
                 <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
@@ -40,9 +40,7 @@
                         <td class="currentcell">No</td>
                         <td class="currentcell">null</td>
                         <td class="currentcell">1</td>
-                        <td class="currentcell">
-                             Chave Primária Composta, chave estrangeira referente a PEDIDOS
-                        </td>
+                        <td class="currentcell" data-i18n="ppd_pdd_id_comment">Chave Primária Composta, chave estrangeira referente a PEDIDOS</td>
                     </tr>
                     <tr>
                         <td>PPD_PDT_ID</td>
@@ -50,8 +48,7 @@
                         <td>No</td>
                         <td>null</td>
                         <td>2</td>
-                        <td>Chave Primária Composta, chave estrangeira referente a PRODUTOS 
-                        </td>
+                        <td data-i18n="ppd_pdt_id_comment">Chave Primária Composta, chave estrangeira referente a PRODUTOS</td>
                     </tr>
                     <tr>
                         <td>PPD_QUANTIDADE</td>
@@ -59,12 +56,37 @@
                         <td>No</td>
                         <td>null</td>
                         <td>3</td>
-                        <td>Quantidade de produtos pedidos</td>
+                        <td data-i18n="ppd_quantidade">Quantidade de produtos pedidos</td>
                     </tr>
                 </table>
             </div>
         </div>
     </div>
+    <div id="lang-switch">
+        <button onclick="loadLanguage('en')">
+            en
+        </button>
+        <button onclick="loadLanguage('ptbr')">
+            pt-br
+        </button>
+    </div>
+    <script src="../language.js"></script>
+    <script id="en" type="application/json">
+        {
+            "pdd_table_comment": "Junction table between orders and products",
+            "ppd_pdd_id_comment": "Composite primary key, foreign key referencing PEDIDOS",
+            "ppd_pdt_id_comment": "Composite primary key, foreign key referencing PRODUTOS",
+            "ppd_quantidade": "Quantity of ordered products"
+        }
+    </script>
+    <script id="ptbr" type="application/json">
+        {
+            "pdd_table_comment": "Tabela de junção entre pedidos e produtos",
+            "ppd_pdd_id_comment": "Chave primária composta, chave estrangeira referente a PEDIDOS",
+            "ppd_pdt_id_comment": "Chave primária composta, chave estrangeira referente a PRODUTOS",
+            "ppd_quantidade": "Quantidade de produtos pedidos" 
+        }
+    </script>
 </body>
 
 </html>

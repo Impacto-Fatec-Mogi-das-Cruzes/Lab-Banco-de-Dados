@@ -22,7 +22,7 @@
                 <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
                     <tr>
                         <th>TABLE_COMMENT</th>
-                        <td>Tabela com os produtos</td>
+                        <td data-i18n="pdt_table_comment">Tabela com os produtos</td>
                     </tr>
                 </table>
                 <table id="Table.1" cellpadding="0" cellspacing="0" summary="">
@@ -40,8 +40,7 @@
                         <td class="currentcell">No</td>
                         <td class="currentcell">null</td>
                         <td class="currentcell">1</td>
-                        <td class="currentcell">Chave Primária, identificador único de poduto 
-                        </td>
+                        <td class="currentcell" data-i18n="pdt_id_comment">Chave primária, identificador único do produto</td>
                     </tr>
                     <tr>
                         <td>PDT_NOME</td>
@@ -49,7 +48,7 @@
                         <td>No</td>
                         <td>null</td>
                         <td>2</td>
-                        <td>Nome do produto</td>
+                        <td data-i18n="pdt_nome_comment">Nome do produto</td>
                     </tr>
                     <tr>
                         <td>PDT_PRECO</td>
@@ -57,12 +56,38 @@
                         <td>No</td>
                         <td>null</td>
                         <td>3</td>
-                        <td>Preço unitário do produto</td>
+                        <td data-i18n="pdt_preco_comment">Preço unitário do produto</td>
                     </tr>
                 </table>
             </div>
         </div>
     </div>
+    </div>
+    <div id="lang-switch">
+        <button onclick="loadLanguage('en')">
+            en
+        </button>
+        <button onclick="loadLanguage('ptbr')">
+            pt-br
+        </button>
+    </div>
+    <script src="../language.js"></script>
+    <script id="en" type="application/json">
+        {
+            "pdt_table_comment": "Table containing products",
+            "pdt_id_comment": "Primary key, unique identifier of the product",
+            "pdt_nome_comment": "Product name",
+            "pdt_preco_comment": "Unit price of the product"
+        }
+    </script>
+    <script id="ptbr" type="application/json">
+        {
+            "pdt_table_comment": "Tabela com os produtos",
+            "pdt_id_comment": "Chave primária, identificador único do produto",
+            "pdt_nome_comment": "Nome do produto",
+            "pdt_preco_comment": "Preço unitário do produto" 
+        }
+    </script>
 </body>
 
 </html>

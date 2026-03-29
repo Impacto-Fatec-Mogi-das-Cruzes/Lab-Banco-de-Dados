@@ -22,7 +22,7 @@
                 <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
                     <tr>
                         <th>TABLE_COMMENT</th>
-                        <td>Tabela com os status dos pedidos</td>
+                        <td data-i18n="stt_table_comment">Tabela com os status de entrega dos pedidos</td>
                     </tr>
                 </table>
                 <table id="Table.0" cellpadding="0" cellspacing="0" summary="">
@@ -40,21 +40,43 @@
                         <td class="currentcell">No</td>
                         <td class="currentcell">null</td>
                         <td class="currentcell">1</td>
-                        <td class="currentcell">
-                             Chave Primária, identificador único de qualidade</td>
+                        <td class="currentcell" data-i18n="stt_id_comment">Chave primária, identificador único do status</td>
                     </tr>
-                    <tr onclick="table_onSelectMasterRow(this, 0, 1)">
+                    <tr>
                         <td>STT_NOME</td>
                         <td>VARCHAR2(255&nbsp;BYTE)</td>
                         <td>No</td>
                         <td>null</td>
                         <td>2</td>
-                        <td>Termo para indicar o status de um pedido</td>
+                        <td data-i18n="stt_nome_comment">Termo para indicar o status de entrega de um pedido</td>
                     </tr>
                 </table>
             </div>
         </div>
     </div>
+    <div id="lang-switch">
+        <button onclick="loadLanguage('en')">
+            en
+        </button>
+        <button onclick="loadLanguage('ptbr')">
+            pt-br
+        </button>
+    </div>
+    <script src="../language.js"></script>
+    <script id="en" type="application/json">
+        {
+            "stt_table_comment": "Table containing order delivery status",
+            "stt_id_comment": "Primary key, unique identifier of the status",
+            "stt_nome_comment": "Term used to indicate the delivery status of an order"
+        }
+    </script>
+    <script id="ptbr" type="application/json">
+        {
+            "stt_table_comment": "Tabela com os status de entrega dos pedidos",
+            "stt_id_comment": "Chave primária, identificador único do status",
+            "stt_nome_comment": "Termo para indicar o status de entrega de um pedido" 
+        }
+    </script>
 </body>
 
 </html>
