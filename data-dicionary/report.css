@@ -15,6 +15,11 @@ pre {
     font-family : Courier;    
 }
 
+#lang-switch button {
+    margin-top: 1%;
+    border-width: 1px;
+}
+
 /* IMAGES */
 
 div.currentmasterreport img, div.currentchildreport img {

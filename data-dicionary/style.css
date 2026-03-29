@@ -12,7 +12,7 @@ body {
 #main-table {
     text-align: center;
     background-color: white;
-    padding: 40px 60px;
+    padding: 40px 80px;
     border-radius: 12px;
 }
 
@@ -38,6 +38,25 @@ fieldset {
 }
 
 fieldset:hover {
+    box-shadow: 5px 5px rgb(232, 232, 232);
+    background-color: rgb(241, 240, 240);
+    border-style: outset;
+    position: relative;
+    top: -1.5px;
+}
+
+#lang-switch button {
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 5px;
+    background-color: white;
+    position: relative;
+    top: 0px;
+    transition: top 100ms;
+}
+
+#lang-switch button:hover {
     box-shadow: 5px 5px rgb(232, 232, 232);
     background-color: rgb(241, 240, 240);
     border-style: outset;
