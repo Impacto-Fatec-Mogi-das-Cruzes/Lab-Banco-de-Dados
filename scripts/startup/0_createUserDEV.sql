@@ -1,3 +1,3 @@
-alter session set "_ORACLE_SCRIPT" = true;
-create user DEV identified by d3v quota unlimited on USERS;
-grant connect, resource to DEV;
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
+CREATE USER DEV IDENTIFIED BY d3v QUOTA UNLIMITED ON USERS;
+GRANT CONNECT, RESOURCE TO DEV;
