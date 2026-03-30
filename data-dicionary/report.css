@@ -15,7 +15,11 @@ pre {
     font-family : Courier;    
 }
 
-#lang-switch button {
+#page-controls a {
+    text-decoration: none;
+}
+
+#page-controls button {
     margin-top: 1%;
     border-width: 1px;
 }
