@@ -1,3 +1,6 @@
+-- ##############################
+-- #     Insert Data Load 1     #
+-- ##############################
 INSERT INTO FORNECEDORES(FOC_NOME, FOC_DIFERENCA)
 SELECT DISTINCT
     d.NOME_FORNECEDOR,
@@ -109,6 +112,272 @@ FROM (
         AND PRIOR SYS_GUID() IS NOT NULL
 ) r
 JOIN PRODUTOS pr
-  ON r.PRODUTO = pr.PDT_NOME;
+ON r.PRODUTO = pr.PDT_NOME;
+
+/
+
+-- ##############################
+-- #     Delete Data Load 1     #
+-- ##############################
+
+DELETE FROM DEV.PEDIDOS_PRODUTOS;
+DELETE FROM DEV.PEDIDOS;
+-- DELETE FROM DEV.PRODUTOS;
+-- DELETE FROM DEV.STATUS;
+-- DELETE FROM DEV.QUALIDADES;
+-- DELETE FROM DEV.FORNECEDORES;
+
+/
+
+-- ##############################
+-- #     Insert Data Load 2     #
+-- ##############################
+
+-- INSERT INTO FORNECEDORES(FOC_NOME, FOC_DIFERENCA)
+-- SELECT DISTINCT
+--     d.NOME_FORNECEDOR,
+--     SUM(d.DIFERENCA)
+-- FROM DADOS d
+-- WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2025 
+-- GROUP BY d.NOME_FORNECEDOR
+-- ORDER BY d.NOME_FORNECEDOR;
+
+-- /
+
+-- INSERT INTO QUALIDADES(QAL_NOME)
+-- SELECT DISTINCT
+--     d.QUALIDADE_DO_PRODUTO
+-- FROM DADOS d
+-- WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2025;
+
+-- /
+
+-- INSERT INTO STATUS(STT_NOME)
+-- SELECT DISTINCT
+--     d.STATUS_DO_PEDIDO
+-- FROM DADOS d
+-- WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2025;
+
+-- /
+
+-- INSERT INTO PRODUTOS(PDT_NOME, PDT_PRECO)
+-- SELECT DISTINCT 
+--     r.PRODUTO,
+--     p.PRECO
+-- FROM DADOS d
+-- CROSS APPLY (
+--     SELECT TRIM(REGEXP_SUBSTR(d.PRODUTOS, '[^,]+', 1, LEVEL))  AS PRODUTO
+--     FROM dual
+--     CONNECT BY LEVEL <=
+--         LENGTH(d.PRODUTOS) - LENGTH(REPLACE(d.PRODUTOS, ',')) + 1
+-- ) r
+-- LEFT JOIN (
+--     SELECT 'Cebolinha' PRODUTO, 3.0 PRECO FROM dual
+--     UNION ALL SELECT 'Couve Tronchuda', 4.5 FROM dual
+--     UNION ALL SELECT 'Rúcula', 5.0 FROM dual
+--     UNION ALL SELECT 'Alface Roxa', 4.0 FROM dual
+--     UNION ALL SELECT 'Couve Manteiga', 4.5 FROM dual
+--     UNION ALL SELECT 'Rabanete', 4.0 FROM dual
+--     UNION ALL SELECT 'Repolho Roxo', 5.5 FROM dual
+--     UNION ALL SELECT 'Agrião', 4.0 FROM dual
+--     UNION ALL SELECT 'Couve-flor', 7.0 FROM dual
+--     UNION ALL SELECT 'Alho-poró', 6.0 FROM dual
+--     UNION ALL SELECT 'Chicória', 4.0 FROM dual
+--     UNION ALL SELECT 'Beterraba', 5.0 FROM dual
+--     UNION ALL SELECT 'Alface Crespa', 4.0 FROM dual
+--     UNION ALL SELECT 'Escarola', 4.5 FROM dual
+--     UNION ALL SELECT 'Espinafre', 5.0 FROM dual
+--     UNION ALL SELECT 'Almeirão', 4.0 FROM dual
+--     UNION ALL SELECT 'Alface Americana', 4.0 FROM dual
+--     UNION ALL SELECT 'Salsa', 3.0 FROM dual
+--     UNION ALL SELECT 'Acelga', 5.5 FROM dual
+--     UNION ALL SELECT 'Mostarda (folha)', 4.5 FROM dual
+--     UNION ALL SELECT 'Alface Lisa', 4.0 FROM dual
+--     UNION ALL SELECT 'Repolho Verde', 5.0 FROM dual
+--     UNION ALL SELECT 'Brócolis Ninja', 6.5 FROM dual
+-- ) p ON r.PRODUTO = p.PRODUTO
+-- WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2025;
+
+-- /
+
+INSERT INTO PEDIDOS(
+    PDD_DATA, 
+    PDD_STT_ID, 
+    PDD_FOC_ID, 
+    PDD_VALOR_TOTAL, 
+    PDD_VALOR_PAGO, 
+    PDD_QAL_ID
+)
+SELECT 
+    d.DATA_DO_PEDIDO,
+    s.STT_ID,
+    f.FOC_ID,
+    d.VALOR_TOTAL,
+    d.VALOR_PAGO,
+    q.QAL_ID
+FROM DADOS d
+JOIN STATUS s ON d.STATUS_DO_PEDIDO = s.STT_NOME
+JOIN FORNECEDORES f ON d.NOME_FORNECEDOR = f.FOC_NOME
+JOIN QUALIDADES q ON d.QUALIDADE_DO_PRODUTO = q.QAL_NOME
+WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2025;
+
+/
+
+INSERT INTO PEDIDOS_PRODUTOS(PPD_PDD_ID, PPD_PDT_ID, PPD_QUANTIDADE)
+SELECT
+    r.PDD_ID,
+    pr.PDT_ID,
+    r.QUANTIDADE
+FROM (
+    SELECT
+        p.PDD_ID,
+        TRIM(REGEXP_SUBSTR(d.PRODUTOS,'[^,]+',1,LEVEL)) AS PRODUTO,
+        TRIM(REGEXP_SUBSTR(d.QUANTIDADES,'[^,]+',1,LEVEL)) AS QUANTIDADE
+    FROM DADOS d
+    JOIN PEDIDOS p
+        ON d.DATA_DO_PEDIDO = p.PDD_DATA
+        AND d.NOME_FORNECEDOR = (SELECT FOC_NOME FROM FORNECEDORES f WHERE f.FOC_ID = p.PDD_FOC_ID)
+        AND d.VALOR_TOTAL = p.PDD_VALOR_TOTAL
+    WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2025 
+    CONNECT BY LEVEL <= LENGTH(d.PRODUTOS) - LENGTH(REPLACE(d.PRODUTOS, ',')) + 1
+        AND PRIOR p.PDD_ID = p.PDD_ID
+        AND PRIOR SYS_GUID() IS NOT NULL
+) r
+JOIN PRODUTOS pr
+ON r.PRODUTO = pr.PDT_NOME;
+
+/
+
+-- ##############################
+-- #     Delete Data Load 2     #
+-- ##############################
+
+DELETE FROM DEV.PEDIDOS_PRODUTOS;
+DELETE FROM DEV.PEDIDOS;
+-- DELETE FROM DEV.PRODUTOS;
+-- DELETE FROM DEV.STATUS;
+-- DELETE FROM DEV.QUALIDADES;
+-- DELETE FROM DEV.FORNECEDORES;
+
+/
+
+-- ##############################
+-- #     Insert Data Load 3     #
+-- ##############################
+
+-- INSERT INTO FORNECEDORES(FOC_NOME, FOC_DIFERENCA)
+-- SELECT DISTINCT
+--     d.NOME_FORNECEDOR,
+--     SUM(d.DIFERENCA)
+-- FROM DADOS d
+-- WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2026 
+-- GROUP BY d.NOME_FORNECEDOR
+-- ORDER BY d.NOME_FORNECEDOR;
+
+-- /
+
+-- INSERT INTO QUALIDADES(QAL_NOME)
+-- SELECT DISTINCT
+--     d.QUALIDADE_DO_PRODUTO
+-- FROM DADOS d
+-- WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2026;
+
+-- /
+
+-- INSERT INTO STATUS(STT_NOME)
+-- SELECT DISTINCT
+--     d.STATUS_DO_PEDIDO
+-- FROM DADOS d
+-- WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2026;
+
+-- /
+
+-- INSERT INTO PRODUTOS(PDT_NOME, PDT_PRECO)
+-- SELECT DISTINCT 
+--     r.PRODUTO,
+--     p.PRECO
+-- FROM DADOS d
+-- CROSS APPLY (
+--     SELECT TRIM(REGEXP_SUBSTR(d.PRODUTOS, '[^,]+', 1, LEVEL))  AS PRODUTO
+--     FROM dual
+--     CONNECT BY LEVEL <=
+--         LENGTH(d.PRODUTOS) - LENGTH(REPLACE(d.PRODUTOS, ',')) + 1
+-- ) r
+-- LEFT JOIN (
+--     SELECT 'Cebolinha' PRODUTO, 3.0 PRECO FROM dual
+--     UNION ALL SELECT 'Couve Tronchuda', 4.5 FROM dual
+--     UNION ALL SELECT 'Rúcula', 5.0 FROM dual
+--     UNION ALL SELECT 'Alface Roxa', 4.0 FROM dual
+--     UNION ALL SELECT 'Couve Manteiga', 4.5 FROM dual
+--     UNION ALL SELECT 'Rabanete', 4.0 FROM dual
+--     UNION ALL SELECT 'Repolho Roxo', 5.5 FROM dual
+--     UNION ALL SELECT 'Agrião', 4.0 FROM dual
+--     UNION ALL SELECT 'Couve-flor', 7.0 FROM dual
+--     UNION ALL SELECT 'Alho-poró', 6.0 FROM dual
+--     UNION ALL SELECT 'Chicória', 4.0 FROM dual
+--     UNION ALL SELECT 'Beterraba', 5.0 FROM dual
+--     UNION ALL SELECT 'Alface Crespa', 4.0 FROM dual
+--     UNION ALL SELECT 'Escarola', 4.5 FROM dual
+--     UNION ALL SELECT 'Espinafre', 5.0 FROM dual
+--     UNION ALL SELECT 'Almeirão', 4.0 FROM dual
+--     UNION ALL SELECT 'Alface Americana', 4.0 FROM dual
+--     UNION ALL SELECT 'Salsa', 3.0 FROM dual
+--     UNION ALL SELECT 'Acelga', 5.5 FROM dual
+--     UNION ALL SELECT 'Mostarda (folha)', 4.5 FROM dual
+--     UNION ALL SELECT 'Alface Lisa', 4.0 FROM dual
+--     UNION ALL SELECT 'Repolho Verde', 5.0 FROM dual
+--     UNION ALL SELECT 'Brócolis Ninja', 6.5 FROM dual
+-- ) p ON r.PRODUTO = p.PRODUTO
+-- WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2026;
+
+-- /
+
+INSERT INTO PEDIDOS(
+    PDD_DATA, 
+    PDD_STT_ID, 
+    PDD_FOC_ID, 
+    PDD_VALOR_TOTAL, 
+    PDD_VALOR_PAGO, 
+    PDD_QAL_ID
+)
+SELECT 
+    d.DATA_DO_PEDIDO,
+    s.STT_ID,
+    f.FOC_ID,
+    d.VALOR_TOTAL,
+    d.VALOR_PAGO,
+    q.QAL_ID
+FROM DADOS d
+JOIN STATUS s ON d.STATUS_DO_PEDIDO = s.STT_NOME
+JOIN FORNECEDORES f ON d.NOME_FORNECEDOR = f.FOC_NOME
+JOIN QUALIDADES q ON d.QUALIDADE_DO_PRODUTO = q.QAL_NOME
+WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2026;
+
+/
+
+INSERT INTO PEDIDOS_PRODUTOS(PPD_PDD_ID, PPD_PDT_ID, PPD_QUANTIDADE)
+SELECT
+    r.PDD_ID,
+    pr.PDT_ID,
+    r.QUANTIDADE
+FROM (
+    SELECT
+        p.PDD_ID,
+        TRIM(REGEXP_SUBSTR(d.PRODUTOS,'[^,]+',1,LEVEL)) AS PRODUTO,
+        TRIM(REGEXP_SUBSTR(d.QUANTIDADES,'[^,]+',1,LEVEL)) AS QUANTIDADE
+    FROM DADOS d
+    JOIN PEDIDOS p
+        ON d.DATA_DO_PEDIDO = p.PDD_DATA
+        AND d.NOME_FORNECEDOR = (SELECT FOC_NOME FROM FORNECEDORES f WHERE f.FOC_ID = p.PDD_FOC_ID)
+        AND d.VALOR_TOTAL = p.PDD_VALOR_TOTAL
+    WHERE EXTRACT(year FROM d.DATA_DO_PEDIDO) = 2026 
+    CONNECT BY LEVEL <= LENGTH(d.PRODUTOS) - LENGTH(REPLACE(d.PRODUTOS, ',')) + 1
+        AND PRIOR p.PDD_ID = p.PDD_ID
+        AND PRIOR SYS_GUID() IS NOT NULL
+) r
+JOIN PRODUTOS pr
+ON r.PRODUTO = pr.PDT_NOME;
 
 COMMIT;
+
+-- DROP TABLE DADOS;
