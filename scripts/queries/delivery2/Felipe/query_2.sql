@@ -18,7 +18,7 @@ WITH anual_sales AS (
 SELECT
     SUM(hpp.HPPD_QUANTIDADE) AS total,
     ans.produto,
-    EXTRACT(MONTH FROM hp.HPDD_DATA) AS mes
+    TO_CHAR(TO_DATE(EXTRACT(MONTH FROM hp.HPDD_DATA), 'MM'), 'MONTH') AS mes
 FROM anual_sales ans
 JOIN HPEDIDOS_PRODUTOS hpp 
     ON ans.produto_id = hpp.HPPD_PDT_ID
@@ -28,4 +28,4 @@ WHERE EXTRACT(YEAR FROM hp.HPDD_DATA) = 2024
 GROUP BY 
     ans.produto,
     EXTRACT(MONTH FROM hp.HPDD_DATA)
-ORDER BY mes;
+ORDER BY EXTRACT(MONTH FROM hp.HPDD_DATA);

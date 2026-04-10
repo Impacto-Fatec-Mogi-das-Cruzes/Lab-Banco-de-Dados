@@ -1,7 +1,7 @@
 -- Meses com maior número de pedidos
 
 SELECT
-    EXTRACT(MONTH FROM hp.HPDD_DATA) AS mes,
+    TO_CHAR(TO_DATE(EXTRACT(MONTH FROM hp.HPDD_DATA), 'MM'), 'MONTH') AS mes,
     COUNT(hp.HPDD_ID) AS Total
 FROM HPEDIDOS hp
 WHERE EXTRACT(YEAR FROM hp.HPDD_DATA) = '2025'
