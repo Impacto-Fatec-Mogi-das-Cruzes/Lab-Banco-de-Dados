@@ -1,0 +1,1 @@
+-- Média da quantidade de Alfaces Lisas compradas por mês do ano de 2024

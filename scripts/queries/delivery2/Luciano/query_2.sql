@@ -1,0 +1,7 @@
+-- Meses com maior número de pedidos
+
+SELECT
+    EXTRACT(MONTH FROM hp.HPDD_DATA) AS mes
+
+FROM HPEDIDOS hp
+GROUP BY EXTRACT(MONTH FROM hp.HPDD_DATA)

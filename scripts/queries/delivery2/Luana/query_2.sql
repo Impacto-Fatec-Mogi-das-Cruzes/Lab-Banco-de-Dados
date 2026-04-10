@@ -1,0 +1,1 @@
+-- Quantidade total de Alfaces Lisas, Crespas e Americanas compradas no ano de 2025
