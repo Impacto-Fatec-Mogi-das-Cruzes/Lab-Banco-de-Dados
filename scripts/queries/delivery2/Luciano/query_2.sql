@@ -1,4 +1,4 @@
--- Número de pedidos de cada mes em cada ano
+-- Total de pedidos em cada mês de cada ano
 
 WITH all_pedidos as (
     SELECT 
@@ -15,7 +15,7 @@ WITH all_pedidos as (
 )
 
 SELECT 
-    TO_CHAR(TO_DATE(EXTRACT(MONTH FROM ap.PDD_DATA), 'MM'), 'MONTH') AS MES,
+    TO_CHAR(TO_DATE(EXTRACT(MONTH FROM ap.PDD_DATA), 'MM'), 'MONTH') AS "Mês",
     COALESCE(COUNT(CASE WHEN EXTRACT(YEAR FROM ap.PDD_DATA) = 2024 THEN 1 END), 0) AS "2024",
     COALESCE(COUNT(CASE WHEN EXTRACT(YEAR FROM ap.PDD_DATA) = 2025 THEN 1 END), 0) AS "2025",
     COALESCE(COUNT(CASE WHEN EXTRACT(YEAR FROM ap.PDD_DATA) = 2026 THEN 1 END), 0) AS "2026"

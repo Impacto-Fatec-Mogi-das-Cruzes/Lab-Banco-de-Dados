@@ -1,4 +1,4 @@
--- Comparação da quantidade de produtos pedidos nos meses de cada ano
+-- Quantidade de produtos pedidos nos meses de cada ano
 
 WITH all_pedidos as (
     SELECT 
