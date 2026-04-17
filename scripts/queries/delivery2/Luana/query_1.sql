@@ -1,4 +1,4 @@
--- Média da quantidade de produtos compradas por mês de cada ano
+-- Quantidade de produtos compradas por mês de cada ano
 with all_pedidos as (
     select 
         p.PDD_ID,
@@ -47,7 +47,7 @@ agrupado as (
 
 select
 ap.PDT_NOME as produto,
-round(avg(ap.PPD_QUANTIDADE),2) as Média,
+sum(ap.PPD_QUANTIDADE)as Quantidade,
 to_char(to_date(extract(month from ap.PDD_DATA), 'MM'), 'month') as mes,
 ag.ano
 from agrupado ag
