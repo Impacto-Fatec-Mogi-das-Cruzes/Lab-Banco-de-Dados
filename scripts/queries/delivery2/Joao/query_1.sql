@@ -17,11 +17,11 @@ with all_pedidos as (
 )
 
 SELECT 
+    EXTRACT(YEAR FROM ap.pdd_data) as "Ano",
     TO_CHAR(TO_DATE(EXTRACT(MONTH FROM ap.PDD_DATA), 'MM'), 'MONTH') AS MES,
-    EXTRACT(MONTH FROM ap.pdd_data) as "Mês",
     COALESCE(SUM(CASE WHEN ap.pdd_valor_total - ap.pdd_valor_pago > 0 THEN 1 END), 0) AS "A Menos", 
     COALESCE(SUM(CASE WHEN ap.pdd_valor_total - ap.pdd_valor_pago = 0 THEN 1 END), 0) AS "Exato",
     COALESCE(SUM(CASE WHEN ap.pdd_valor_total - ap.pdd_valor_pago < 0 THEN 1 END), 0) AS "A Mais"
 FROM all_pedidos ap
-GROUP BY EXTRACT(MONTH FROM ap.pdd_data)
-ORDER BY EXTRACT(MONTH FROM ap.pdd_data)
+GROUP BY EXTRACT(MONTH FROM ap.pdd_data), EXTRACT(YEAR FROM ap.pdd_data)
+ORDER BY EXTRACT(YEAR FROM ap.pdd_data)
