@@ -1,4 +1,4 @@
--- Quantidade total de Alfaces Lisas, Crespas e Americanas compradas em cada ano
+-- Quantidade total de produtos compradas em cada ano
 
 with all_pedidos as (
     select 
@@ -47,13 +47,12 @@ agrupado as (
 )
 
 select
-sum(case when ap.PDT_NOME = 'Alface Lisa' then ap.PPD_QUANTIDADE end) as "Alface Lisa",
-sum(case when ap.PDT_NOME = 'Alface Americana' then ap.PPD_QUANTIDADE end) as "Alface Americana",
-sum(case when ap.PDT_NOME = 'Alface Crespa' then ap.PPD_QUANTIDADE end) as "Alface Crespa",
+ap.PDT_NOME as produto,
+sum(ap.PPD_QUANTIDADE) as "Quantidade",
 ag.ano
 from agrupado ag
 join all_pedidos ap
     on ag.PPD_PDT_ID = ap.PPD_PDT_ID
     and extract(year from ap.PDD_DATA) = ag.ano
-group by ag.ano
+group by ag.ano, ap.PDT_NOME
 order by ag.ano

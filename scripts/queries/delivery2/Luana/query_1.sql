@@ -1,4 +1,4 @@
--- Média da quantidade de Alfaces Lisas compradas por mês de cada ano
+-- Média da quantidade de produtos compradas por mês de cada ano
 with all_pedidos as (
     select 
         p.PDD_ID,
@@ -46,13 +46,13 @@ agrupado as (
 )
 
 select
-sum(ap.PPD_QUANTIDADE) as total,
+ap.PDT_NOME as produto,
+round(avg(ap.PPD_QUANTIDADE),2) as Média,
 to_char(to_date(extract(month from ap.PDD_DATA), 'MM'), 'month') as mes,
 ag.ano
 from agrupado ag
 join all_pedidos ap
     on ag.PPD_PDT_ID = ap.PPD_PDT_ID
     and extract(year from ap.PDD_DATA) = ag.ano
-where ag.produto = 'Alface Lisa'
-group by extract(month from ap.PDD_DATA),ag.ano
+group by extract(month from ap.PDD_DATA),ag.ano, ap.PDT_NOME
 order by ag.ano
