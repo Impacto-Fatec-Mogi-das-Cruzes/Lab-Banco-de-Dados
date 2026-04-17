@@ -1,12 +1,60 @@
--- Produto mais vendido do ano 2024
+-- Produto mais vendido do ano 
+with all_pedidos as (
+    select 
+        p.PDD_ID,
+        p.PDD_DATA,
+        p.PDD_STT_ID,
+        p.PDD_FOC_ID,
+        p.PDD_VALOR_TOTAL,
+        p.PDD_VALOR_PAGO,
+        p.PDD_QAL_ID,
+        pp.PPD_PDD_ID,
+        pp.PPD_PDT_ID,
+        pp.PPD_QUANTIDADE,
+        pr.*
+    from PEDIDOS p
+    join PEDIDOS_PRODUTOS pp on p.PDD_ID = pp.PPD_PDD_ID
+    join PRODUTOS pr on pp.PPD_PDT_ID = pr.PDT_ID
 
-select 
-sum (hpp.HPPD_QUANTIDADE) as total,
-p.PDT_NOME as produto
-from HPEDIDOS hp
-join HPEDIDOS_PRODUTOS hpp on hp.HPDD_ID = hpp.HPPD_PDD_ID
-join PRODUTOS p on hpp.HPPD_PDT_ID = p.PDT_ID
-where extract(year from hp.HPDD_DATA) = '2024'
-group by p.PDT_NOME
-order by total desc 
-fetch first 1 rows only
+    union all
+
+    select 
+        hp.HPDD_ID as PDD_ID,
+        hp.HPDD_DATA as PDD_DATA,
+        hp.HPDD_STT_ID as PDD_STT_ID,
+        hp.HPDD_FOC_ID as PDD_FOC_ID,
+        hp.HPDD_VALOR_TOTAL as PDD_VALOR_TOTAL,
+        hp.HPDD_VALOR_PAGO as PDD_VALOR_PAGO,
+        hp.HPDD_QAL_ID as PDD_QAL_ID,
+        hpp.HPPD_PDD_ID as PPD_PDD_ID,
+        hpp.HPPD_PDT_ID as PPD_PDT_ID,
+        hpp.HPPD_QUANTIDADE as PPD_QUANTIDADE,
+        pr.*
+    from HPEDIDOS hp
+    join HPEDIDOS_PRODUTOS hpp on hp.HPDD_ID = hpp.HPPD_PDD_ID
+    join PRODUTOS pr on hpp.HPPD_PDT_ID = pr.PDT_ID
+),
+
+agrupado as (
+    select 
+        extract(year from ap.PDD_DATA) as ano,
+        ap.PDT_NOME as produto,
+        sum(ap.PPD_QUANTIDADE) as total
+    from all_pedidos ap
+    group by extract(year from ap.PDD_DATA), ap.PDT_NOME
+),
+
+rankeado as (
+    select 
+        a.*,
+        row_number() over (
+            partition by a.ano 
+            order by a.total desc
+        ) as posicao
+    from agrupado a
+)
+
+select *
+from rankeado
+where posicao <= 5
+order by ano, posicao;
