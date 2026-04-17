@@ -1,23 +1,25 @@
--- Total de pedidos em cada mês de cada ano
+-- Quantidade de produtos pedidos nos meses de cada ano
 
 WITH all_pedidos as (
     SELECT 
-        p.PDD_ID,
-        p.PDD_DATA
-    FROM PEDIDOS p
+        p.PDD_DATA,
+        ppd.PPD_QUANTIDADE
+    FROM PEDIDOS_PRODUTOS ppd
+    JOIN PEDIDOS p ON ppd.PPD_PDD_ID = p.PDD_ID
 
     UNION ALL
 
-    SELECT 
-        hp.HPDD_ID AS PDD_ID,
-        hp.HPDD_DATA AS PDD_DATA
-    FROM HPEDIDOS hp
+    SELECT
+        hp.HPDD_DATA AS PDD_DATA,
+        hppd.HPPD_QUANTIDADE AS PPD_QUANTIDADE
+    FROM HPEDIDOS_PRODUTOS hppd
+    JOIN HPEDIDOS hp ON hppd.HPPD_PDD_ID = hp.HPDD_ID
 )
 
 SELECT 
-    TO_CHAR(TO_DATE(EXTRACT(MONTH FROM ap.PDD_DATA), 'MM'), 'MONTH') AS "Mês",
+    TO_CHAR(TO_DATE(EXTRACT(MONTH FROM ap.PDD_DATA), 'MM'), 'MONTH') AS MES,
     EXTRACT(YEAR FROM ap.PDD_DATA) AS "Ano",
-    COUNT(ap.PDD_ID) AS QTD
+    SUM(ap.PPD_QUANTIDADE) AS QUANTIDADE
 FROM all_pedidos ap
 GROUP BY EXTRACT(MONTH FROM ap.PDD_DATA), EXTRACT(YEAR FROM ap.PDD_DATA)
 ORDER BY EXTRACT(YEAR FROM ap.PDD_DATA)
