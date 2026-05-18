@@ -138,201 +138,41 @@ BEGIN
     IF DELETING THEN
         V_TP_OPERACAO := 'D';
         
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDD_ID,
-            'HPDD_ID',
-            :OLD.HPDD_ID,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDD_ID,
-            'HPDD_DATA',
-            :OLD.HPDD_DATA,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDD_ID,
-            'HPDD_STT_ID',
-            :OLD.HPDD_STT_ID,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDD_ID,
-            'HPDD_FOC_ID',
-            :OLD.HPDD_FOC_ID,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDD_ID,
-            'HPDD_VALOR_TOTAL',
-            :OLD.HPDD_VALOR_TOTAL,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDD_ID,
-            'HPDD_VALOR_PAGO',
-            :OLD.HPDD_VALOR_PAGO,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDD_ID,
-            'HPDD_QAL_ID',
-            :OLD.HPDD_QAL_ID,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDD_ID,
-            'HPDD_DT_ENTRADA',
-            :OLD.HPDD_DT_ENTRADA,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_ID',:OLD.HPDD_ID,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_DATA',:OLD.HPDD_DATA,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_STT_ID',:OLD.HPDD_STT_ID,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_FOC_ID',:OLD.HPDD_FOC_ID,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_VALOR_TOTAL',:OLD.HPDD_VALOR_TOTAL,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_VALOR_PAGO',:OLD.HPDD_VALOR_PAGO,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_QAL_ID',:OLD.HPDD_QAL_ID,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_DT_ENTRADA',:OLD.HPDD_DT_ENTRADA,NULL,V_USU_BD,V_USU_SO,SYSDATE);
         
     ELSE
         V_TP_OPERACAO := 'U';
         
         IF (:NEW.HPDD_ID <> :OLD.HPDD_ID) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_ID,
-                'HPDD_ID',
-                :OLD.HPDD_ID,
-                :NEW.HPDD_ID,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_ID',:OLD.HPDD_ID,:NEW.HPDD_ID,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDD_DATA <> :OLD.HPDD_DATA) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_ID,
-                'HPDD_DATA',
-                :OLD.HPDD_DATA,
-                :NEW.HPDD_DATA,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_DATA',:OLD.HPDD_DATA,:NEW.HPDD_DATA,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDD_STT_ID <> :OLD.HPDD_STT_ID) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_ID,
-                'HPDD_STT_ID',
-                :OLD.HPDD_STT_ID,
-                :NEW.HPDD_STT_ID,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_STT_ID',:OLD.HPDD_STT_ID,:NEW.HPDD_STT_ID,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDD_FOC_ID <> :OLD.HPDD_FOC_ID) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_ID,
-                'HPDD_FOC_ID',
-                :OLD.HPDD_FOC_ID,
-                :NEW.HPDD_FOC_ID,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_FOC_ID',:OLD.HPDD_FOC_ID,:NEW.HPDD_FOC_ID,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDD_VALOR_TOTAL <> :OLD.HPDD_VALOR_TOTAL) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_ID,
-                'HPDD_VALOR_TOTAL',
-                :OLD.HPDD_VALOR_TOTAL,
-                :NEW.HPDD_VALOR_TOTAL,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_VALOR_TOTAL',:OLD.HPDD_VALOR_TOTAL,:NEW.HPDD_VALOR_TOTAL,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDD_VALOR_PAGO <> :OLD.HPDD_VALOR_PAGO) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_ID,
-                'HPDD_VALOR_PAGO',
-                :OLD.HPDD_VALOR_PAGO,
-                :NEW.HPDD_VALOR_PAGO,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_VALOR_PAGO',:OLD.HPDD_VALOR_PAGO,:NEW.HPDD_VALOR_PAGO,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDD_QAL_ID <> :OLD.HPDD_QAL_ID) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_ID,
-                'HPDD_QAL_ID',
-                :OLD.HPDD_QAL_ID,
-                :NEW.HPDD_QAL_ID,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_QAL_ID',:OLD.HPDD_QAL_ID,:NEW.HPDD_QAL_ID,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDD_DT_ENTRADA <> :OLD.HPDD_DT_ENTRADA) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_ID,
-                'HPDD_DT_ENTRADA',
-                :OLD.HPDD_DT_ENTRADA,
-                :NEW.HPDD_DT_ENTRADA,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDD_ID,'HPDD_DT_ENTRADA',:OLD.HPDD_DT_ENTRADA,:NEW.HPDD_DT_ENTRADA,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         
     END IF;
@@ -358,105 +198,25 @@ BEGIN
     IF DELETING THEN
         V_TP_OPERACAO := 'D';
         
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPPD_PDD_ID,
-            'HPPD_PDD_ID',
-            :OLD.HPPD_PDD_ID,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPPD_PDD_ID,
-            'HPPD_PDT_ID',
-            :OLD.HPPD_PDT_ID,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPPD_PDD_ID,
-            'HPPD_QUANTIDADE',
-            :OLD.HPPD_QUANTIDADE,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPPD_PDD_ID,
-            'HPPD_DT_ENTRADA',
-            :OLD.HPPD_DT_ENTRADA,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPPD_PDD_ID,'HPPD_PDD_ID',:OLD.HPPD_PDD_ID,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPPD_PDD_ID,'HPPD_PDT_ID',:OLD.HPPD_PDT_ID,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPPD_PDD_ID,'HPPD_QUANTIDADE',:OLD.HPPD_QUANTIDADE,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPPD_PDD_ID,'HPPD_DT_ENTRADA',:OLD.HPPD_DT_ENTRADA,NULL,V_USU_BD,V_USU_SO,SYSDATE);
         
     ELSE
         V_TP_OPERACAO := 'U';
         
         IF (:NEW.HPPD_PDD_ID <> :OLD.HPPD_PDD_ID) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_PDD_ID,
-                'HPPD_PDD_ID',
-                :OLD.HPPD_PDD_ID,
-                :NEW.HPPD_PDD_ID,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPPD_PDD_ID,'HPPD_PDD_ID',:OLD.HPPD_PDD_ID,:NEW.HPPD_PDD_ID,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPPD_PDT_ID <> :OLD.HPPD_PDT_ID) THEN
-             PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPPD_PDD_ID,
-                'HPPD_PDT_ID',
-                :OLD.HPPD_PDT_ID,
-                :NEW.HPPD_PDT_ID,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-             );
+             PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPPD_PDD_ID,'HPPD_PDT_ID',:OLD.HPPD_PDT_ID,:NEW.HPPD_PDT_ID,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPPD_QUANTIDADE <> :OLD.HPPD_QUANTIDADE) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPPD_PDD_ID,
-                'HPPD_QUANTIDADE',
-                :OLD.HPPD_QUANTIDADE,
-                :NEW.HPPD_QUANTIDADE,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPPD_PDD_ID,'HPPD_QUANTIDADE',:OLD.HPPD_QUANTIDADE,:NEW.HPPD_QUANTIDADE,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPPD_DT_ENTRADA <> :OLD.HPPD_DT_ENTRADA) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDD_PDD_ID,
-                'HPPD_DT_ENTRADA',
-                :OLD.HPPD_DT_ENTRADA,
-                :NEW.HPPD_DT_ENTRADA,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPPD_PDD_ID,'HPPD_DT_ENTRADA',:OLD.HPPD_DT_ENTRADA,:NEW.HPPD_DT_ENTRADA,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
 
     END IF;
@@ -482,105 +242,25 @@ BEGIN
     IF DELETING THEN
         V_TP_OPERACAO := 'D';
         
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDT_ID,
-            'HPDT_ID',
-            :OLD.HPDT_ID,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDT_ID,
-            'HPDT_NOME',
-            :OLD.HPDT_NOME,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDT_ID,
-            'HPDT_PRECO',
-            :OLD.HPDT_PRECO,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HPDT_ID,
-            'HPDT_DT_ENTRADA',
-            :OLD.HPDT_DT_ENTRADA,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDT_ID,'HPDT_ID',:OLD.HPDT_ID,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDT_ID,'HPDT_NOME',:OLD.HPDT_NOME,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDT_ID,'HPDT_PRECO',:OLD.HPDT_PRECO,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDT_ID,'HPDT_DT_ENTRADA',:OLD.HPDT_DT_ENTRADA,NULL,V_USU_BD,V_USU_SO,SYSDATE);
         
     ELSE
         V_TP_OPERACAO := 'U';
         
         IF (:NEW.HPDT_ID <> :OLD.HPDT_ID) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDT_ID,
-                'HPDT_ID',
-                :OLD.HPDT_ID,
-                :NEW.HPDT_ID,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDT_ID,'HPDT_ID',:OLD.HPDT_ID,:NEW.HPDT_ID,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDT_NOME <> :OLD.HPDT_NOME) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDT_ID,
-                'HPDT_NOME',
-                :OLD.HPDT_NOME,
-                :NEW.HPDT_NOME,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDT_ID,'HPDT_NOME',:OLD.HPDT_NOME,:NEW.HPDT_NOME,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDT_PRECO <> :OLD.HPDT_PRECO) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDT_ID,
-                'HPDT_PRECO',
-                :OLD.HPDT_PRECO,
-                :NEW.HPDT_PRECO,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDT_ID,'HPDT_PRECO',:OLD.HPDT_PRECO,:NEW.HPDT_PRECO,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HPDT_DT_ENTRADA <> :OLD.HPDT_DT_ENTRADA) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HPDT_ID,
-                'HPDT_DT_ENTRADA',
-                :OLD.HPDT_DT_ENTRADA,
-                :NEW.HPDT_DT_ENTRADA,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HPDT_ID,'HPDT_DT_ENTRADA',:OLD.HPDT_DT_ENTRADA,:NEW.HPDT_DT_ENTRADA,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         
     END IF;
@@ -606,81 +286,21 @@ BEGIN
     IF DELETING THEN
         V_TP_OPERACAO := 'D';
         
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HQAL_ID,
-            'HQAL_ID',
-            :OLD.HQAL_ID,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HQAL_ID,
-            'HQAL_NOME',
-            :OLD.HQAL_NOME,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HQAL_ID,
-            'HQAL_DT_ENTRADA',
-            :OLD.HQAL_DT_ENTRADA,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HQAL_ID,'HQAL_ID',:OLD.HQAL_ID,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HQAL_ID,'HQAL_NOME',:OLD.HQAL_NOME,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HQAL_ID,'HQAL_DT_ENTRADA',:OLD.HQAL_DT_ENTRADA,NULL,V_USU_BD,V_USU_SO,SYSDATE);
         
     ELSE
         V_TP_OPERACAO := 'U';
         
         IF (:NEW.HQAL_ID <> :OLD.HQAL_ID) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HQAL_ID,
-                'HQAL_ID',
-                :OLD.HQAL_ID,
-                :NEW.HQAL_ID,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HQAL_ID,'HQAL_ID',:OLD.HQAL_ID,:NEW.HQAL_ID,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HQAL_NOME <> :OLD.HQAL_NOME) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HQAL_ID,
-                'HQAL_NOME',
-                :OLD.HQAL_NOME,
-                :NEW.HQAL_NOME,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HQAL_ID,'HQAL_NOME',:OLD.HQAL_NOME,:NEW.HQAL_NOME,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HQAL_DT_ENTRADA <> :OLD.HQAL_DT_ENTRADA) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HQAL_ID,
-                'HQAL_DT_ENTRADA',
-                :OLD.HQAL_DT_ENTRADA,
-                :NEW.HQAL_DT_ENTRADA,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HQAL_ID,'HQAL_DT_ENTRADA',:OLD.HQAL_DT_ENTRADA,:NEW.HQAL_DT_ENTRADA,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         
     END IF;
@@ -706,81 +326,21 @@ BEGIN
     IF DELETING THEN
         V_TP_OPERACAO := 'D';
         
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HSTT_ID,
-            'HSTT_ID',
-            :OLD.HSTT_ID,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HSTT_ID,
-            'HSTT_NOME',
-            :OLD.HSTT_NOME,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
-        PROC_AUDITORIA(
-            V_TABELA,
-            V_TP_OPERACAO,
-            :OLD.HSTT_ID,
-            'HSTT_DT_ENTRADA',
-            :OLD.HSTT_DT_ENTRADA,
-            NULL,
-            V_USU_BD,
-            V_USU_SO,
-            SYSDATE
-        );
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HSTT_ID,'HSTT_ID',:OLD.HSTT_ID,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HSTT_ID,'HSTT_NOME',:OLD.HSTT_NOME,NULL,V_USU_BD,V_USU_SO,SYSDATE);
+        PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HSTT_ID,'HSTT_DT_ENTRADA',:OLD.HSTT_DT_ENTRADA,NULL,V_USU_BD,V_USU_SO,SYSDATE);
         
     ELSE
         V_TP_OPERACAO := 'U';
         
         IF (:NEW.HSTT_ID <> :OLD.HSTT_ID) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HSTT_ID,
-                'HSTT_ID',
-                :OLD.HSTT_ID,
-                :NEW.HSTT_ID,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HSTT_ID,'HSTT_ID',:OLD.HSTT_ID,:NEW.HSTT_ID,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HSTT_NOME <> :OLD.HSTT_NOME) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HSTT_ID,
-                'HSTT_NOME',
-                :OLD.HSTT_NOME,
-                :NEW.HSTT_NOME,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HSTT_ID,'HSTT_NOME',:OLD.HSTT_NOME,:NEW.HSTT_NOME,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         IF (:NEW.HSTT_DT_ENTRADA <> :OLD.HSTT_DT_ENTRADA) THEN
-            PROC_AUDITORIA(
-                V_TABELA,
-                V_TP_OPERACAO,
-                :OLD.HSTT_ID,
-                'HSTT_DT_ENTRADA',
-                :OLD.HSTT_DT_ENTRADA,
-                :NEW.HSTT_DT_ENTRADA,
-                V_USU_BD,
-                V_USU_SO,
-                SYSDATE
-            );
+            PROC_AUDITORIA(V_TABELA,V_TP_OPERACAO,:OLD.HSTT_ID,'HSTT_DT_ENTRADA',:OLD.HSTT_DT_ENTRADA,:NEW.HSTT_DT_ENTRADA,V_USU_BD,V_USU_SO,SYSDATE);
         END IF;
         
     END IF;
