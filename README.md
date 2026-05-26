@@ -31,7 +31,7 @@ Arquivos para as entregas das atividades da matéria Laboratório de Banco de Da
 > ### Entrega 5
 > - Certificado do curso de Power BI
 > - Dashboard de análise no Power BI
-> - ***Data Indefinido***
+> - ***Data: 05/06/2026***
 ---
 
 ## Inicializando o Banco
