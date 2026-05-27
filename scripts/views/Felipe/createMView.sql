@@ -1,5 +1,5 @@
 -- EXEMPLO DE MVIEW
-CREATE MATERIALIZED VIEW DW_USER.MV_PEDIDOS_STAGE
+CREATE MATERIALIZED VIEW DW_USER.MV_PRODUTO_STAGE
 BUILD IMMEDIATE 
 REFRESH FORCE
 ON DEMAND
@@ -26,6 +26,6 @@ FROM DW_USER.ALL_PRODUTOS;
 
 -- refresh na view
 BEGIN
-   dbms_mview.refresh('MV_PEDIDOS_STAGE', method => 'C', atomic_refresh => FALSE);
+   dbms_mview.refresh('MV_PRODUTO_STAGE', method => 'C', atomic_refresh => FALSE);
 END;
 /
