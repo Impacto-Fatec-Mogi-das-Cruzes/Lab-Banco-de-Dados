@@ -26,7 +26,7 @@ ORDER BY EXTRACT(year FROM ap.PDD_DATA), EXTRACT(month FROM ap.PDD_DATA)
 
 -- refresh na view
 BEGIN
-   dbms_mview.refresh('MV_PRODUTO_STAGE', method => 'C', atomic_refresh => FALSE);
+   dbms_mview.refresh('PEDIDOS_MVIEW', method => 'C', atomic_refresh => FALSE);
 END;
 
 /
