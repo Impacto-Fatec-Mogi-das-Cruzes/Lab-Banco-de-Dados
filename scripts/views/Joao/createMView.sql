@@ -11,12 +11,12 @@ WITH fornecedor_vendas AS (
         pr.PDT_ID,
         pr.PDT_NOME,
         SUM(pp.PPD_QUANTIDADE) AS TOTAL_VENDIDO
-    FROM FORNECEDORES f
-        JOIN PEDIDOS pd
+    FROM DEV.FORNECEDORES f
+        JOIN DEV.PEDIDOS pd
             ON f.FOC_ID = pd.PDD_FOC_ID
-        JOIN PEDIDOS_PRODUTOS pp
+        JOIN DEV.PEDIDOS_PRODUTOS pp
             ON pd.PDD_ID = pp.PPD_PDD_ID
-        JOIN PRODUTOS pr
+        JOIN DEV.PRODUTOS pr
             ON pp.PPD_PDT_ID = pr.PDT_ID
     GROUP BY
         f.FOC_ID,
